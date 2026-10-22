@@ -18,22 +18,6 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-[[redirects]]
-  from = "/guias"
-  to = "/guias/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/como-instalar-cachyos"
-  to = "/como-instalar-cachyos/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/linux-vs-windows"
-  to = "/linux-vs-windows/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/revivir-pc-viejo-con-linux"
-  to = "/revivir-pc-viejo-con-linux/index.html"
-  status = 200
+# Las rutas limpias (/guias, /como-instalar-cachyos, etc.) las resuelve
+# automáticamente Netlify con pretty URLs: 301 -> /ruta/ -> index.html.
+# No hacen falta redirects manuales.
