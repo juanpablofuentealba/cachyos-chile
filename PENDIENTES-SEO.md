@@ -161,3 +161,38 @@ pero anotado para mejorar.
   aclarar "solo software").
 
 **Nota:** el operador considera el estado actual **aceptable**, no urgente.
+
+---
+
+### B6-bis. Decisión tomada (01-nov-2026, noche) — pendiente de EJECUTAR
+
+El operador confirmó **A + B juntas** para el hero ("1 toda la razón, 2 toda la
+razón"). No hay que volver a decidir: mañana es solo **ejecutar y validar**.
+
+**Motivo:** A (arreglar) y B (mover) son el mismo arreglo. El hero no es lugar
+para 4 precios; el detalle ya vive en `#modalidades`. Hacer solo una deja
+problema (hero sin mensaje fuerte, o info duplicada).
+
+**Hero propuesto (resultado final):**
+
+> ⚡ *(badge actual, sin cambios)*
+>
+> # Arreglo tu PC remoto en todo Chile
+> Soporte remoto para **Linux y Windows** por **$18.000/h**. Presencial en Macul
+> y Android en mi domicilio. También armamos tu **página web**.
+>
+> [💬 Arreglar mi PC remoto] [Ver los 4 servicios]
+
+**Problemas del hero actual que esto resuelve:**
+1. El subtítulo suelta **4 servicios y 4 precios** de golpe (mucha info).
+2. "Arreglo tu PC" / "arreglo tu Android" repetitivo.
+
+**Lo que NO se toca:** H1 (mensaje fuerte), botones y badge.
+
+**Checklist para mañana:**
+- [ ] Verificar que `#modalidades` tenga los 4 servicios con precios
+      (web $149.900 · PC presencial $44.900 +$19.900 fuera de Macul ·
+      Android desde $19.900 · remoto $18.000/h).
+- [ ] Acortar el subtítulo del hero (quitar listado de precios).
+- [ ] Validar (HTML/anclas) y actualizar `style.css?v=` si se toca CSS.
+- [ ] Rama + PR + revisar deploy preview. Trabajar en el MSI (encender por WoL).
