@@ -1,0 +1,9 @@
+{
+  "name": "cachyos-chile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio de Servicio Técnico Macul (landing estática en Netlify)",
+  "scripts": {
+    "avisar": "bash avisar-buscadores.sh"
+  }
+}

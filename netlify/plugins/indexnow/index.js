@@ -20,8 +20,11 @@ const URLS = [
 module.exports = {
   onSuccess: async ({ constants, utils }) => {
     // Solo en producción (no en deploy previews / branch deploys).
-    if (constants.CONTEXT !== "production") {
-      console.log(`IndexNow: contexto "${constants.CONTEXT}", no se avisa.`);
+    // En Netlify Constants.CONTEXT vale "production"; en builds locales
+    // puede venir undefined, y ahí también avisamos.
+    const ctx = constants && constants.CONTEXT;
+    if (ctx && ctx !== "production") {
+      console.log(`IndexNow: contexto "${ctx}", no se avisa.`);
       return;
     }
     try {
