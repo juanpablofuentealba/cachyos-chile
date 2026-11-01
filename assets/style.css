@@ -79,10 +79,10 @@
   .btn-mp:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,158,227,.5); }
   .btn-pair { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 18px; }
 
-  header { padding: 96px 0 72px; position: relative; }
+  header { padding: 96px 0 48px; position: relative; }
   .glow {
-    position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
-    width: min(800px, 100vw); height: 500px; border-radius: 50%;
+    position: absolute; top: -160px; left: 50%; transform: translateX(-50%);
+    width: min(800px, 100vw); height: 460px; border-radius: 50%;
     background: radial-gradient(closest-side, rgba(79,140,255,.22), transparent);
     pointer-events: none;
   }
