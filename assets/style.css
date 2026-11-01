@@ -110,17 +110,16 @@
     margin: 0 auto;
   }
   .mini-card {
-    display: flex; flex-direction: column; align-items: center; text-align: center;
-    gap: 6px; padding: 20px 14px; text-decoration: none;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    gap: 8px; padding: 22px 14px; text-decoration: none;
     background: var(--surface); border: 1px solid var(--border);
     border-radius: var(--radius); color: var(--text);
     transition: transform .2s ease, border-color .2s ease;
-    min-height: 150px;
+    min-height: 120px;
   }
   .mini-card:hover { transform: translateY(-4px); border-color: var(--accent); }
   .mini-icon { font-size: 1.8rem; line-height: 1; }
   .mini-name { font-weight: 600; font-size: .98rem; line-height: 1.25; min-height: 2.5em; }
-  .mini-price { color: var(--accent-2); font-weight: 600; font-size: .9rem; margin-top: auto; }
   /* Máximo 2 columnas (para bloques de 4 tarjetas) */
   .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; margin-left: auto; margin-right: auto; }
   .card {
