@@ -1,4 +1,4 @@
-# Servicio Técnico Macul — cachyos-chile
+# Tu emprendimiento — cachyos-chile
 
 > 📣 **Publicidad.** Este repo es el **sitio comercial** (precios, textos de
 > venta, Netlify). Las **herramientas de trabajo** (scripts, método, hallazgos)
