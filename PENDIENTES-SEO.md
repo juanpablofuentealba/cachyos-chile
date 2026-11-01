@@ -69,3 +69,48 @@ Personal ($9/mes ≈ $9.000 CLP).
 **Nuestros precios (lanzamiento a la baja):**
 Landing $149.900 · Pyme $249.900 · Dominio $24.900/año ·
 Mantención $9.900 o $19.900/mes.
+
+---
+
+## B5. Dominio .cl — verificación de disponibilidad (01-nov-2026)
+
+Consultado al **whois oficial de NIC Chile** (`whois.nic.cl:43`):
+
+| Dominio | Estado |
+|---|---|
+| `serviciotecnicomacul.cl` | ✅ **LIBRE** |
+| `soporte-macul.cl` | ✅ libre |
+| `macultech.cl` | ✅ libre |
+| `serviciotecnicomacul.com` | ❌ ocupado |
+| `linuxchile.cl` | ❌ ocupado |
+
+**Recomendado:** `serviciotecnicomacul.cl` (libre).
+
+### Por qué el agente NO puede comprarlo
+1. **Pago:** NIC exige tarjeta del operador.
+2. **Identidad legal:** el .cl se inscribe a nombre de persona/empresa con RUT.
+3. **Sin API:** NIC Chile no tiene API de registro (verificado; el registro es
+   por formulario web con sesión autenticada).
+
+### Pasos manuales (5 min, una vez) — operador
+1. Entrar a https://www.nic.cl → "Inscribe tu dominio".
+2. Buscar `serviciotecnicomacul.cl`, registrar.
+3. Pagar **$9.990/año** (exento de IVA) con débito/crédito.
+4. A nombre del operador (RUT).
+
+### Lo que queda automatizado cuando haya dominio (agente)
+- Conectar dominio en Netlify (DNS + SSL automático).
+- Actualizar `canonical`, `og:url`, `sitemap.xml` y JSON-LD al dominio nuevo.
+- Agregar redirect 301 de `cachyos-chile.netlify.app` → dominio nuevo.
+- Actualizar host/keyLocation en `netlify/plugins/indexnow/index.js` y
+  `avisar-buscadores.sh` → **IndexNow empieza a funcionar** (hoy da 403 por ser
+  subdominio `.netlify.app`; con dominio propio debería aceptar).
+- Guiar el alta en Search Console (requiere clic del operador).
+
+### Estado de IndexNow (dejado listo, pendiente dominio)
+- ✅ `avisar-buscadores.sh` creado y funcionando.
+- ✅ Plugin Netlify `netlify/plugins/indexnow/` con `manifest.yml` y
+  `package.json` raíz → corre en cada deploy (`plugin_state: success`).
+- ✅ Key publicada: `4ac291d7c370106abaa06b0edf277790.txt`.
+- ⚠️ Aviso rechazado hoy con `UserForbiddedToAccessSite` (403): IndexNow no
+  acepta subdominios `.netlify.app`. Se resolverá con el dominio propio.
