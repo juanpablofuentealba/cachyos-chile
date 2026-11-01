@@ -20,8 +20,20 @@ Publicado en Netlify: https://cachyos-chile.netlify.app/
 │   └── revivir-pc-viejo.jpg
 ├── robots.txt
 ├── sitemap.xml
-└── netlify.toml
+├── netlify.toml
+├── avisar-buscadores.sh            # Avisa a IndexNow (Bing/Yandex)
+├── netlify/plugins/indexnow/       # Plugin: avisa a IndexNow en cada deploy
+├── HALLAZGOS.md                    # H-01..H-15: auditoría técnica verificada
+└── PENDIENTES-SEO.md               # Pendientes de posicionamiento + dominio .cl
 ```
+
+## Documentación
+
+- **`HALLAZGOS.md`** — auditoría del sitio y de Netlify (15 hallazgos con datos
+  medidos): menú móvil, IndexNow, plan Free y créditos, cache, seguridad,
+  rendimiento, precios de mercado.
+- **`PENDIENTES-SEO.md`** — lo que falta: Search Console, dominio `.cl`
+  (disponibilidad verificada), cuentas Netlify por cliente.
 
 ## Vista previa local
 
