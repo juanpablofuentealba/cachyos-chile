@@ -1,0 +1,7 @@
+{
+  "name": "netlify-plugin-indexnow",
+  "version": "1.0.0",
+  "description": "Avisa a IndexNow (Bing/Yandex) en cada deploy de producción",
+  "main": "index.js",
+  "private": true
+}

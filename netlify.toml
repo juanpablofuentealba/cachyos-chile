@@ -1,6 +1,11 @@
 [build]
   publish = "."
 
+# Avisa a IndexNow (Bing/Yandex) en cada deploy de producción.
+# Plugin local, sin dependencias externas.
+[[plugins]]
+  package = "./netlify/plugins/indexnow"
+
 [[headers]]
   for = "/*"
   [headers.values]
