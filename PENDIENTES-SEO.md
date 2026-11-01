@@ -114,3 +114,50 @@ Consultado al **whois oficial de NIC Chile** (`whois.nic.cl:43`):
 - ✅ Key publicada: `4ac291d7c370106abaa06b0edf277790.txt`.
 - ⚠️ Aviso rechazado hoy con `UserForbiddedToAccessSite` (403): IndexNow no
   acepta subdominios `.netlify.app`. Se resolverá con el dominio propio.
+
+---
+
+## B6. Revisar el hero: mezcla dos servicios y puede confundir (PENDIENTE)
+
+**Origen:** observación del operador (01-nov-2026): *"hay que arreglar la
+info del hero para más claridad de los clientes; se confunden cosas desde mi
+punto de vista, pero en principio está bueno."* Estado: **aceptable por ahora**,
+pero anotado para mejorar.
+
+**Hero actual:**
+
+> **Tu negocio con página web — y tu PC como nuevo**
+> *Te armo tu página web profesional (rápida, con WhatsApp y hosting incluido)
+> y también dejo tu PC, notebook o Android funcionando como nuevo: formateo,
+> instalación de Linux (CachyOS) y optimización. Presencial en Macul o remoto
+> en todo Chile.*
+> CTA: "Quiero mi página web" · "Ver los 4 servicios"
+
+**Qué puede confundir (a revisar):**
+
+1. **Dos mensajes en un mismo titular.** Web (digital, para negocios) y
+   reparación de PC (equipo físico) son públicos distintos. Juntarlos en el
+   H1 puede diluir qué ofrece realmente.
+2. **"Tu PC como nuevo"** — el sitio NO toca hardware (solo software). "Como
+   nuevo" podría hacer pensar en arreglo físico (piezas, pantalla), y luego
+   el cliente se decepciona al leer "solo software".
+3. **"Tu negocio con página web"** — asume que el visitante *tiene* un
+   negocio; el que entra buscando arreglar su PC personal no se siente aludido.
+4. **"Presencial en Macul o remoto en todo Chile"** aparece junto a la web,
+   pero la web no es presencial. Mezcla geografía de servicios que no aplica
+   igual a todos.
+5. **CTA principal = web**, cuando quizá la mayoría del tráfico que llega busca
+   algo técnico (o al revés). Conviene decidir el público objetivo principal.
+
+**Ideas para cuando se retome (elegir una):**
+
+- **A. Hero de servicio único:** dejar solo el servicio más rentable (web) y
+  mover el técnico a su sección. Más claro, pero abandona al visitante técnico.
+- **B. Hero con dos columnas/botones separados:** "¿Quieres una web?" vs
+  "¿Tu PC está lento?", cada uno con su CTA. Segmenta sin mezclar.
+- **C. Hero por público:** "Para tu negocio" / "Para tu equipo", con
+  sub-opciones. Más ordenado si el tráfico es mixto.
+- **D. Dejar el hero como está** y solo pulir redacción (quitar "como nuevo",
+  aclarar "solo software").
+
+**Nota:** el operador considera el estado actual **aceptable**, no urgente.
