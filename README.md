@@ -1,6 +1,6 @@
 # Servicio Técnico Macul — cachyos-chile
 
-Sitio estático (HTML + CSS) para el servicio técnico de software a domicilio en Macul.
+Sitio estático (HTML + CSS) para el servicio técnico de software: **instalación limpia de CachyOS** a domicilio (visita incluida en Macul, +$19.900 fuera de Macul), **Android** solo software en Macul y **soporte remoto** en todo Chile.
 Publicado en Netlify: https://cachyos-chile.netlify.app/
 
 ## Estructura
