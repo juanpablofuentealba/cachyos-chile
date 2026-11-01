@@ -1,6 +1,11 @@
 # Servicio Técnico Macul — cachyos-chile
 
-Sitio estático (HTML + CSS) para el servicio técnico de software a domicilio en Macul.
+> 📣 **Publicidad.** Este repo es el **sitio comercial** (precios, textos de
+> venta, Netlify). Las **herramientas de trabajo** (scripts, método, hallazgos)
+> viven en `rustdesk-wlan-ssh-pi`, no acá. Regla: *qué se vende → este repo ·
+> cómo se trabaja → `rustdesk-wlan-ssh-pi`*.
+
+Sitio estático (HTML + CSS) para el servicio técnico de software: **instalación limpia de CachyOS** a domicilio (visita incluida en Macul, +$19.900 fuera de Macul), **Android** solo software en Macul y **soporte remoto** en todo Chile.
 Publicado en Netlify: https://cachyos-chile.netlify.app/
 
 ## Estructura
