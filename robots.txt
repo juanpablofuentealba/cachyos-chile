@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cachyos-chile.netlify.app/sitemap.xml
+Sitemap: https://juanpablomasia.netlify.app/sitemap.xml
