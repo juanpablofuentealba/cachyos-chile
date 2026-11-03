@@ -196,3 +196,51 @@ problema (hero sin mensaje fuerte, o info duplicada).
 - [ ] Acortar el subtítulo del hero (quitar listado de precios).
 - [ ] Validar (HTML/anclas) y actualizar `style.css?v=` si se toca CSS.
 - [ ] Rama + PR + revisar deploy preview. Trabajar en el MSI (encender por WoL).
+
+---
+
+## C. Publicidad de marca en el pie de página (idea del operador, 3-nov-2026)
+
+**Idea:** que **todas** las páginas web que generemos (nuestra y de clientes)
+lleven al final un **crédito/publicidad de marca** del operador — algo del tipo
+*"Página web creada por Juan Pablo + IA"* / nombre de empresa. Así cada sitio que
+entregamos **trabaja como publicidad nuestra** (efecto "powered by").
+
+**Orden acordado: probar primero en nuestra propia página** (`cachyos-chile`).
+
+### Estado actual del footer en `index.html` (línea ~473)
+
+```html
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Tu emprendimiento · Presencial en Macul · Remoto en todo Chile</div>
+    <div><a href="https://cachyos.org" target="_blank">cachyos.org</a></div>
+  </div>
+</footer>
+```
+
+### Tareas
+
+- [ ] Definir el **texto/ marca exacta**: nombre comercial + "· IA" (ej.
+      *"Sitio creado por <Marca> · desarrollo web con IA"*). Ojo: el footer aún
+      dice "Tu emprendimiento" → aprovechar para poner el nombre real.
+- [ ] Agregar el crédito en el footer de **las 5 páginas** (`index.html`,
+      `guias/`, `como-instalar-cachyos/`, `linux-vs-windows/`,
+      `revivir-pc-viejo-con-linux/`).
+- [ ] ¿Vincular el crédito a una **página propia** (portafolio/servicios de
+      desarrollo web) para captar leads? Definir destino.
+- [ ] Mantener consistencia visual (`style.css`) y actualizar `?v=` si se toca CSS.
+- [ ] **Exportar el componente** (snippet HTML/CSS) reutilizable para pegar en
+      los sitios de **clientes** — ahí es donde rinde como publicidad.
+
+### Enlazado con el negocio
+
+- Encaja con el servicio **#1 (Páginas web + mantención)** de cachyos-chile.
+- Los sitios de clientes pasan a ser **vitrina** del servicio de desarrollo web.
+- **No** poner datos de clientes en el crédito (privacidad, regla dura nº 5/6).
+
+### Nota de flujo (cliente nuevo)
+
+Hay un cliente que **mandará sus bocetos escritos + imágenes** para su sitio.
+Cuando lleguen: armarlo en el repo público `cachyos-chile` (si es de marketing/
+web) y aplicar el crédito de marca al pie desde el primer despliegue.
