@@ -1,4 +1,4 @@
-# Pendientes SEO — cachyos-chile.netlify.app
+# Pendientes SEO — juanpablomasia.netlify.app
 
 > Estado al 01-nov-2026. Lo que **falta** hacer para mejorar posicionamiento.
 > El on-page ya está bien: title, description, canonical, robots, 1 H1,
@@ -8,19 +8,19 @@
 ## B1. Dar de alta en Google Search Console (inmediato, gratis)
 
 **Problema:** el sitio probablemente **no está indexado** en Google todavía.
-Búsqueda `site:cachyos-chile.netlify.app` no arroja resultados.
+Búsqueda `site:juanpablomasia.netlify.app` no arroja resultados.
 
 **Pasos (lo hace el operador con su cuenta Google):**
 1. Entrar a https://search.google.com/search-console
 2. "Agregar propiedad" → tipo **Prefijo de URL** →
-   `https://cachyos-chile.netlify.app/`
+   `https://juanpablomasia.netlify.app/`
 3. Verificar propiedad. Opción fácil: **etiqueta HTML**. Google da un
    `<meta name="google-site-verification" ...>`. Pegarlo en el `<head>` de
    `index.html` y push (Netlify despliega solo).
    - Alternativa sin tocar código: verificación por **DNS** (si ya hay dominio
      propio) o por **Google Analytics** (el sitio ya tiene GA4
      `G-CNV88M2Q9N` → se puede verificar por ahí directamente).
-4. Enviar el sitemap: `https://cachyos-chile.netlify.app/sitemap.xml`
+4. Enviar el sitemap: `https://juanpablomasia.netlify.app/sitemap.xml`
 5. Usar "Inspección de URL" → "Solicitar indexación" para las 5 páginas.
 
 ## B2. Dominio propio .cl (la palanca grande)
@@ -101,7 +101,7 @@ Consultado al **whois oficial de NIC Chile** (`whois.nic.cl:43`):
 ### Lo que queda automatizado cuando haya dominio (agente)
 - Conectar dominio en Netlify (DNS + SSL automático).
 - Actualizar `canonical`, `og:url`, `sitemap.xml` y JSON-LD al dominio nuevo.
-- Agregar redirect 301 de `cachyos-chile.netlify.app` → dominio nuevo.
+- Agregar redirect 301 de `juanpablomasia.netlify.app` → dominio nuevo.
 - Actualizar host/keyLocation en `netlify/plugins/indexnow/index.js` y
   `avisar-buscadores.sh` → **IndexNow empieza a funcionar** (hoy da 403 por ser
   subdominio `.netlify.app`; con dominio propio debería aceptar).

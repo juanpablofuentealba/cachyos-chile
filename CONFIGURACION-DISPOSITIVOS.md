@@ -3,7 +3,7 @@
 Guía para sincronizar tus dispositivos con el repositorio de GitHub y el sitio de Netlify.
 
 - **Repositorio:** https://github.com/juanpablofuentealba/cachyos-chile
-- **Sitio en vivo:** https://cachyos-chile.netlify.app/
+- **Sitio en vivo:** https://juanpablomasia.netlify.app/
 - **Usuario GitHub:** juanpablofuentealba
 - **Correo:** jpfuentealbabizama@gmail.com
 
@@ -109,7 +109,7 @@ conflictos entre dispositivos.
 ## Cómo funciona la sincronización
 
 ```
-Dispositivo  ->  GitHub (main)  ->  Netlify (auto-deploy)  ->  cachyos-chile.netlify.app
+Dispositivo  ->  GitHub (main)  ->  Netlify (auto-deploy)  ->  juanpablomasia.netlify.app
 ```
 
 - **GitHub:** cada dispositivo clona el repo y hace push con `gh auth login`.

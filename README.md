@@ -6,7 +6,7 @@
 > cómo se trabaja → `rustdesk-wlan-ssh-pi`*.
 
 Sitio estático (HTML + CSS) para el servicio técnico de software: **instalación limpia de CachyOS** a domicilio (visita incluida en Macul, +$19.900 fuera de Macul), **Android** solo software en Macul y **soporte remoto** en todo Chile.
-Publicado en Netlify: https://cachyos-chile.netlify.app/
+Publicado en Netlify: https://juanpablomasia.netlify.app/
 
 ## Estructura
 
@@ -56,11 +56,11 @@ actualiza:
    pulsando **"Scrape Again"**.
 2. Como WhatsApp comparte la caché de Meta, tras re-scrapear suele aparecer.
 3. Para forzar una preview nueva en un chat, comparte la URL con un parámetro
-   distinto, p. ej. `https://cachyos-chile.netlify.app/?v=3`.
+   distinto, p. ej. `https://juanpablomasia.netlify.app/?v=3`.
 
 Metas relevantes en `index.html`:
 
-- `og:image` → `https://cachyos-chile.netlify.app/og-image-macul.jpg` (1200x630)
+- `og:image` → `https://juanpablomasia.netlify.app/og-image-macul.jpg` (1200x630)
 - `og:image:width` / `og:image:height` → `1200` / `630`
 - `twitter:card` → `summary_large_image`
 

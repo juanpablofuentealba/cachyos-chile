@@ -1,7 +1,7 @@
 # Hallazgos técnicos — sitio cachyos-chile (Netlify)
 
 > Registro de todo lo auditado y verificado el **01-nov-2026** sobre
-> https://cachyos-chile.netlify.app/ mientras trabaja sin dominio propio.
+> https://juanpablomasia.netlify.app/ mientras trabaja sin dominio propio.
 > Cada hallazgo trae el dato real medido (no supuestos).
 >
 > Documento hermano: `PENDIENTES-SEO.md` (lo que falta hacer + dominio .cl).
