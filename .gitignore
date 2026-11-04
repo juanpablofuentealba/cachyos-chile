@@ -3,3 +3,6 @@ Thumbs.db
 *.tmp
 .netlify/
 node_modules/
+*.bak
+*.bak-pi-*
+*.bak-*
