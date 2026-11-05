@@ -17,6 +17,7 @@ Publicado en Netlify: https://juanpablomasia.netlify.app/
 ├── como-instalar-cachyos/index.html
 ├── linux-vs-windows/index.html
 ├── revivir-pc-viejo-con-linux/index.html
+├── pc-se-apaga-solo/index.html    # Guía: mi PC se apaga solo (7 causas)
 ├── og-image-macul.jpg              # Imagen de vista previa (WhatsApp/redes)
 ├── assets/
 │   ├── style.css

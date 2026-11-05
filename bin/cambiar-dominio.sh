@@ -53,6 +53,7 @@ FILES=(
   "como-instalar-cachyos/index.html"
   "linux-vs-windows/index.html"
   "revivir-pc-viejo-con-linux/index.html"
+  "pc-se-apaga-solo/index.html"
   "404.html"
   "robots.txt"
   "llms.txt"

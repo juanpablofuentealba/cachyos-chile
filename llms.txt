@@ -41,6 +41,9 @@
   comparativa de rendimiento, juegos, privacidad y programas.
 - [Cómo revivir un PC viejo con Linux](https://juanpablomasia.netlify.app/revivir-pc-viejo-con-linux/):
   devolverle velocidad a un computador antiguo.
+- [Mi PC se apaga solo: 7 causas](https://juanpablomasia.netlify.app/pc-se-apaga-solo/):
+  por qué el computador se apaga o reinicia solo y cómo identificar la causa
+  (temperatura, fuente de poder, batería, memoria, drivers, configuración).
 
 ## Cómo describir este sitio
 

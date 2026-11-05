@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi PC se apaga solo: 7 causas y cómo saber cuál es (2026)</title>
+<meta name="description" content="Tu PC o notebook se apaga solo y no sabes por qué. Guía para identificar la causa en minutos: temperatura, fuente, batería, drivers o Windows. En español de Chile.">
+<link rel="canonical" href="https://juanpablomasia.netlify.app/pc-se-apaga-solo/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🖥️%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=11">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Juan Pablo + IA">
+<meta property="og:title" content="Mi PC se apaga solo: 7 causas y cómo saber cuál es">
+<meta property="og:description" content="Guía para identificar por qué tu PC se apaga solo, en minutos y sin adivinar.">
+<meta property="og:url" content="https://juanpablomasia.netlify.app/pc-se-apaga-solo/">
+<meta property="og:image" content="https://juanpablomasia.netlify.app/og-image-macul.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://juanpablomasia.netlify.app/og-image-macul.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mi PC se apaga solo: 7 causas y cómo saber cuál es",
+  "description": "Guía para identificar por qué un PC o notebook se apaga solo: temperatura, fuente de poder, batería, drivers, Windows o Linux.",
+  "inLanguage": "es-CL",
+  "image": "https://juanpablomasia.netlify.app/og-image-macul.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Juan Pablo Fuentealba",
+    "jobTitle": "Técnico en computación y desarrollo web",
+    "url": "https://juanpablomasia.netlify.app/#quien-soy",
+    "knowsAbout": [
+      "Diagnóstico de PC",
+      "Windows",
+      "Linux",
+      "CachyOS",
+      "Soporte remoto"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Juan Pablo + IA",
+    "url": "https://juanpablomasia.netlify.app/"
+  },
+  "mainEntityOfPage": "https://juanpablomasia.netlify.app/pc-se-apaga-solo/",
+  "datePublished": "2026-11-05",
+  "dateModified": "2026-11-05"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi PC se apaga solo al rato de prenderlo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casi siempre es temperatura: el procesador llega a su límite y el equipo se apaga para protegerse. Pasa por polvo acumulado, pasta térmica seca o ventilador trabado. La señal es que aguanta más en frío y cada vez menos cuando ya lleva rato prendido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué se apaga solo cuando juego o exijo el computador?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si se apaga únicamente bajo carga alta y nunca cuando está tranquilo, la sospecha principal es la fuente de poder (en PC de escritorio) o la temperatura (en notebook). La fuente deja de entregar la energía necesaria justo cuando se le exige más."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Formatear arregla que el PC se apague solo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo si la causa es software (drivers, actualizaciones, programas). Si la causa es temperatura, fuente de poder, batería o memoria, formatear no cambia nada. Por eso conviene diagnosticar antes de reinstalar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede arreglar por remoto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El diagnóstico por software se puede hacer por remoto: revisar el historial de apagados, temperaturas reportadas, drivers y configuración. Si la causa es hardware (fuente, batería, memoria, ventilación), el arreglo requiere presencial."
+      }
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+<!-- Google Analytics 4 (mismo tag que la home) -->
+<script>
+(function(){
+  var GA_ID = 'G-CNV88M2Q9N'; /* Google tag "Instalar Linux" — GA4 */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  if (GA_ID) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('config', GA_ID, {});
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (a && GA_ID) {
+      gtag('event', 'click_whatsapp', { event_category: 'contacto', event_label: a.getAttribute('href') });
+    }
+  }, true);
+})();
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <div class="logo"><a href="/" style="text-decoration:none;color:inherit;">💻 <span>Juan Pablo + IA</span></a></div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+    <label for="menu-toggle" class="menu-btn" aria-hidden="true">
+      <span class="menu-icon"></span>
+      <span class="sr-only">Menú</span>
+    </label>
+    <div class="nav-links">
+      <a href="/#servicio">El servicio</a>
+      <a href="/guias/">Guías</a>
+      <a href="/#precios">Precios</a>
+      <a href="/#faq">Preguntas</a>
+      <a href="https://wa.me/56931232000?text=Hola%2C%20mi%20PC%20se%20apaga%20solo%20y%20quiero%20que%20lo%20revisen" target="_blank" class="btn btn-wa">WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-hero">
+  <div class="wrap">
+    <a class="back" href="/guias/">← Todas las guías</a>
+    <h1>Mi PC se apaga solo: 7 causas y cómo saber cuál es</h1>
+    <p class="lead">Se apaga de golpe, sin aviso, a veces al rato de prenderlo. Antes de pensar en comprar otro, hay que saber <b>por qué</b> pasa: hay siete causas típicas y cada una se comporta distinto.</p>
+    <p class="meta">Actualizado el 5 de noviembre de 2026 · Lectura 8 min</p>
+  </div>
+</header>
+
+<article class="wrap article">
+
+  <h2>Lo primero: ¿se apaga o se reinicia?</h2>
+  <p>No es lo mismo, y confundirlo hace perder tiempo. Fíjate en qué pasa exactamente:</p>
+  <table>
+    <tr><th>Lo que ves</th><th>Se parece a</th></tr>
+    <tr><td>Se <b>corta la luz</b> de golpe: pantalla negra, ventilador para, sin mensaje</td><td>Protección por temperatura o falla de energía</td></tr>
+    <tr><td>Se <b>reinicia solo</b>: vuelve a arrancar, a veces con "Windows se reinició inesperadamente"</td><td>Driver, Windows o memoria</td></tr>
+    <tr><td>Se <b>apaga de golpe al moverlo</b> (notebook)</td><td>Batería o contacto flojo</td></tr>
+    <tr><td>Se apaga <b>justo bajo carga</b> (jugar, renderizar, compilar)</td><td>Fuente de poder o temperatura</td></tr>
+    <tr><td>Se <b>suspende</b> y no despierta</td><td>Otra cosa: es energía/suspensión, no apagado</td></tr>
+  </table>
+  <div class="tip"><b>Anota el patrón antes de tocar nada:</b> ¿a los cuántos minutos? ¿haciendo qué? ¿calienta antes? ¿pasa en frío? Ese dato solo ya descarta la mitad de las causas.</div>
+
+  <h2>1. Temperatura (la más común en PC de varios años)</h2>
+  <p>Cuando el procesador pasa cierto límite, el equipo <b>se apaga solo a propósito</b> para no quemarse. Es una protección, no una falla del procesador.</p>
+  <p><b>La señal típica:</b> aguanta más tiempo en frío y se apaga antes cuando ya lleva rato prendido, o solo cuando exige de más (juegos, videos en HD, programas pesados).</p>
+  <p><b>Qué lo provoca:</b> pasta térmica seca, disipador lleno de polvo, ventilador trabado o —en notebooks— rejillas tapadas por apoyarlo en la cama o el sofá.</p>
+  <p><b>Cómo confirmarlo:</b> si el equipo tiene un programa de monitoreo, mira la temperatura antes de que se apague. Si pasa de ~85-90 °C justo antes del corte, está claro.</p>
+
+  <h2>2. Fuente de poder (PC de escritorio)</h2>
+  <p>Una fuente que se está quedando corta o está degradada <b>corta la energía</b> cuando le pides más de lo que puede dar. Pasa justo al abrir un juego o al exigir la tarjeta de video.</p>
+  <p><b>La señal típica:</b> se apaga <b>solo</b> bajo carga alta, y nunca cuando el PC está tranquilo. Con el tiempo, cada vez aguanta menos.</p>
+  <div class="tip"><b>Pista:</b> si el PC se apaga al jugar pero aguanta horas navegando, la sospecha se mueve a fuente o temperatura, no a Windows.</div>
+
+  <h2>3. Batería o cargador (notebook)</h2>
+  <p>Una batería agotada <b>no sostiene</b> el consumo aunque esté enchufado, y el equipo se apaga. También pasa con un cargador que ya no entrega el voltaje correcto.</p>
+  <p><b>La señal típica:</b> se apaga de golpe al moverlo, no carga al 100%, la batería dura minutos, o se apaga igual enchufado.</p>
+
+  <h2>4. Memoria RAM con falla</h2>
+  <p>Un módulo defectuoso provoca <b>pantallazos azules y reinicios</b>, a veces al azar. Es la causa más confusa, porque el equipo funciona bien durante horas y de repente falla.</p>
+  <p><b>La señal típica:</b> reinicios aleatorios, pantalla azul con códigos distintos cada vez, o se cae al abrir varios programas a la vez.</p>
+
+  <h2>5. Drivers, sobre todo de video</h2>
+  <p>Un driver mal instalado o Windows actualizándose a medias puede <b>reiniciar</b> el equipo. También un disco con sectores dañados.</p>
+  <p><b>La señal típica:</b> empezó después de una actualización, se reinicia con un mensaje de error, o Windows queda "raro" tras volver.</p>
+
+  <h2>6. Configuración de energía</h2>
+  <p>A veces no es una falla: está configurado para dormirse o apagarse. Parece lo mismo, pero no lo es.</p>
+  <p><b>Cómo descartarlo:</b> revisar el plan de energía y el historial de apagados. Si el equipo se apagó "por energía" y no por error, es configuración.</p>
+
+  <h2>7. Software que fuerza el apagado</h2>
+  <p>Antivirus mal instalados, actualizaciones a medio hacer, o programas de "optimización" que prometen maravillas y terminan rompiendo el sistema.</p>
+
+  <h2>El dato que orienta casi todo</h2>
+  <table>
+    <tr><th>Cuándo se apaga</th><th>Sospecha principal</th></tr>
+    <tr><td>A los pocos minutos, siempre parecido</td><td>Temperatura</td></tr>
+    <tr><td>Solo bajo carga (juegos, programas pesados)</td><td>Fuente de poder o temperatura</td></tr>
+    <tr><td>De golpe, sin patrón, con pantalla azul a veces</td><td>Memoria RAM o drivers</td></tr>
+    <tr><td>Al moverlo (notebook)</td><td>Batería o contacto</td></tr>
+    <tr><td>Después de una actualización</td><td>Drivers o Windows</td></tr>
+    <tr><td>Después de horas, sin calentar</td><td>Configuración de energía</td></tr>
+  </table>
+
+  <h2>Qué puedes probar tú, sin riesgo</h2>
+  <ul>
+    <li><b>Respalda antes de nada.</b> Un equipo que se apaga solo puede llevarse archivos en el camino.</li>
+    <li><b>Limpia la zona de ventilación</b> (no abras el equipo si no sabes): aleja el notebook de la cama y del sofá, y saca el polvo de las rejillas.</li>
+    <li><b>Mira el historial de apagados</b> del sistema para ver si fue un corte o un error.</li>
+    <li><b>Prueba el equipo en frío</b> y anota los minutos exactos hasta que se apaga. Si con cada prueba aguanta menos, es temperatura.</li>
+    <li><b>No instales "optimizadores"</b> que prometen arreglarlo todo: suelen empeorarlo.</li>
+  </ul>
+
+  <h2>Lo que NO conviene hacer</h2>
+  <ul>
+    <li><b>No seguir usándolo "hasta que aguante"</b>: si es temperatura, puedes dañar componentes.</li>
+    <li><b>No cambiarlo por otro</b> sin saber la causa: puede ser una limpieza y no un PC nuevo.</li>
+    <li><b>No reinstalar el sistema</b> de entrada: si la causa es la fuente o la batería, formatear no arregla nada.</li>
+  </ul>
+
+  <h2>Cómo se resuelve, según la causa</h2>
+  <table>
+    <tr><th>Causa</th><th>Solución habitual</th></tr>
+    <tr><td>Temperatura</td><td>Limpieza y mantención del sistema de ventilación</td></tr>
+    <tr><td>Fuente de poder</td><td>Cambio de fuente por una del tamaño correcto</td></tr>
+    <tr><td>Batería</td><td>Cambio de batería o del cargador</td></tr>
+    <tr><td>Memoria RAM</td><td>Cambio del módulo defectuoso</td></tr>
+    <tr><td>Drivers / Windows</td><td>Instalación limpia y drivers correctos</td></tr>
+    <tr><td>Configuración de energía</td><td>Ajustar el plan de energía</td></tr>
+  </table>
+
+  <blockquote>Lo importante no es el diagnóstico por el nombre: es saber <b>si el equipo se puede recuperar</b> y cuánto cuesta. Sin eso, cualquiera te puede vender cualquier cosa.</blockquote>
+
+  <div class="cta">
+    <h2>¿Tu PC se está apagando solo?</h2>
+    <p>Lo reviso por remoto en todo Chile (<b>$18.000/hora</b>) o presencial en Macul. Te digo <b>qué es, qué se puede hacer y cuánto cuesta</b> antes de tocar nada. Trabajo <b>solo software</b>: no abro equipos ni cambio piezas; si el problema es de hardware, te lo digo claro y te derivamos.</p>
+    <a href="https://wa.me/56931232000?text=Hola%2C%20mi%20PC%20se%20apaga%20solo.%20Quiero%20un%20diagn%C3%B3stico" target="_blank" class="btn btn-wa">💬 Pedir diagnóstico por WhatsApp</a>
+  </div>
+
+</article>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 <strong>Juan Pablo + IA</strong> · Servicio técnico de software</div>
+    <div><a href="/">Inicio</a> · <a href="/guias/">Guías</a> · <span class="credit"><a href="https://juanpablomasia.netlify.app" class="brand">Sitio desarrollado por Juan Pablo + IA</a></span></div>
+  </div>
+</footer>
+
+</body>
+</html>

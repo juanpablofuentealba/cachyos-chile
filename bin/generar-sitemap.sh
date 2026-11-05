@@ -30,6 +30,7 @@ PAGES=(
   "como-instalar-cachyos/index.html|$SITE/como-instalar-cachyos/|0.9"
   "linux-vs-windows/index.html|$SITE/linux-vs-windows/|0.8"
   "revivir-pc-viejo-con-linux/index.html|$SITE/revivir-pc-viejo-con-linux/|0.8"
+  "pc-se-apaga-solo/index.html|$SITE/pc-se-apaga-solo/|0.9"
 )
 
 # Fecha del último commit del repo (respaldo).
