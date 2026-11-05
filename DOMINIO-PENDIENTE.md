@@ -25,6 +25,14 @@
 
 ## 2. TUS PASOS (en orden, ~15 minutos)
 
+> 🗓️ **Fecha de compra definida por el operador (05-nov-2026):**
+> **entre el 15 y el 20 de cada mes**, que es cuando entra dinero.
+> **Próxima ventana: 15 al 20 de noviembre de 2026.** Sin urgencia: no se
+> necesita el dominio para nada de lo que ya está funcionando.
+>
+> Hay un recordatorio automático (cron en a13, días 14, 15, 16, 19 y 20)
+> que avisa por WhatsApp a a16. Script: `bin/recordar-dominio.sh`.
+
 ### Paso 1 — Comprar el dominio (5 min)
 
 1. Entrar a **https://www.nic.cl** → "Inscribe tu dominio".
