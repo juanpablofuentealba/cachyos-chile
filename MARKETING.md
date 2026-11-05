@@ -206,9 +206,10 @@ Contactos en `rustdesk-clientes/investigacion/macul-contactos-salud.md`.
       el agente solo y qué pasa siempre por su revisión.
 
 **Agente (autónomo, bajo riesgo):**
-- [ ] **GA4 en las 4 subpáginas** (H-05).
-- [ ] **`404.html`** propia con CTA a WhatsApp (H-06).
-- [ ] **`lastmod`** en el sitemap, generado desde la fecha del commit (H-07).
+- [x] **GA4 en las 4 subpáginas** (H-05) — hecho 05-nov-2026.
+- [x] **`404.html`** propia con CTA a WhatsApp (H-06) — hecho 05-nov-2026.
+- [x] **`lastmod`** en el sitemap (H-07) — hecho 05-nov-2026.
+- [x] **`llms.txt`** y `author` real en el JSON-LD — hecho 05-nov-2026.
 - [ ] Ejecutar la **decisión A+B del hero** (B6-bis) y validar `#modalidades`.
 - [ ] Al tener dominio: conectar en Netlify, 301 desde el `.netlify.app`,
       actualizar `canonical`/`og:url`/`sitemap`/JSON-LD, y **reintentar IndexNow**.
@@ -252,10 +253,10 @@ necesitan para *poder* indexar y rankear. Hoy está casi todo:
 | `robots.txt` + `sitemap.xml` | ✅ 200 OK, 5 URLs |
 | JSON-LD por tipo de página | ✅ `LocalBusiness`+`Offer`+`FAQPage` (home), `HowTo` (cachyos), `Article` (linux-vs-windows, revivir-pc), `CollectionPage` (guias) |
 | Meta description / canonical / OG | ✅ en las 5 páginas |
-| **`llms.txt`** (mapa del sitio para LLMs) | ❌ **404** — no existe |
-| **`lastmod`** en sitemap | ❌ falta |
-| **`404.html`** propia | ❌ falta |
-| **GA4 en subpáginas** | ❌ 0 de 4 |
+| **`llms.txt`** (mapa del sitio para LLMs) | ✅ **creado 05-nov-2026** (200, `text/plain`) |
+| **`lastmod`** en sitemap | ✅ hecho 05-nov-2026 (`bin/generar-sitemap.sh`) |
+| **`404.html`** propia | ✅ hecho 05-nov-2026 |
+| **GA4 en subpáginas** | ✅ hecho 05-nov-2026 (5 de 5) |
 | **Search Console** | ❌ sin alta |
 | **Dominio propio** | ❌ pendiente |
 
@@ -335,12 +336,17 @@ Piezas de Pi que ya están instaladas y sirven para esto:
 
 ### 8.6 Plan por etapas (lo que se puede empezar ya)
 
-**Etapa 0 — Cimientos (agente, 1 sesión, reversible):**
-- [ ] `llms.txt` en la raíz (mapa del sitio en texto plano para asistentes IA).
-- [ ] `lastmod` real en `sitemap.xml`, generado desde la fecha del commit.
-- [ ] `404.html` propia con CTA a WhatsApp.
-- [ ] GA4 en las 4 subpáginas (cierra H-05).
-- [ ] `author`/`publisher` + `dateModified` reales en el JSON-LD.
+**Etapa 0 — Cimientos (agente, 1 sesión, reversible):** ✅ **HECHA 05-nov-2026 (PR #28)**
+- [x] `llms.txt` en la raíz (mapa del sitio en texto plano para asistentes IA).
+- [x] `lastmod` real en `sitemap.xml`, generado desde la fecha del commit.
+- [x] `404.html` propia con CTA a WhatsApp.
+- [x] GA4 en las 4 subpáginas (cierra H-05).
+- [x] `author`/`publisher` + `dateModified` reales en el JSON-LD.
+- [x] Fecha visible exacta en las guías (antes decía "Actualizado 2026").
+- [x] Plugin IndexNow apuntando al host correcto (estaba en el dominio muerto).
+
+> Verificado en producción: `llms.txt` 200 · 404 propia · 5 `lastmod` ·
+> GA4 en las 5 páginas · `author: Person` en las 3 guías.
 
 **Etapa 1 — Ojos (operador + agente):**
 - [ ] Search Console (verificación por GA4) + enviar sitemap.
@@ -384,9 +390,10 @@ marca del sitio      -> "Juan Pablo + IA" (el repo se llama cachyos-chile)
 https://matias-electricista.netlify.app/     -> 200  (ejemplo real)
 sitemap.xml  -> 5 URLs, dominio actualizado, 0 lastmod
 robots.txt   -> Allow: / + sitemap
-llms.txt     -> 404  (no existe)
-subpáginas con GA4 -> 0 de 4
-404.html     -> no existe
+llms.txt     -> 200  (creado 05-nov-2026)
+subpáginas con GA4 -> 4 de 4 (05-nov-2026)
+404.html     -> propia, con CTA a WhatsApp (05-nov-2026)
+sitemap      -> 5 lastmod reales (05-nov-2026)
 JSON-LD por página  -> LocalBusiness/Offer/FAQPage · HowTo · Article · CollectionPage
 IndexNow     -> 403 UserForbiddedToAccessSite (subdominio .netlify.app)
 dominio .cl  -> serviciotecnicomacul.cl LIBRE (whois.nic.cl, 01-nov-2026)
@@ -395,6 +402,6 @@ a13          -> crond (runit) activo; pi --print / --mode json disponibles
 
 ---
 
-*Consolidado por Pi (nodo `a13`) el 05-nov-2026. Si cambia un precio, un texto
+*Consolidado por Pi (nodo `a13`) el 05-nov-2026. Etapa 0 ejecutada el mismo día (PR #28). Si cambia un precio, un texto
 de venta o el estado SEO, **actualizar este archivo** — es la referencia que
 debe leer cualquier nodo antes de proponer ideas de marketing.*

@@ -92,7 +92,7 @@ con la key real publicada devuelve `403`. El `202` inicial era falso positivo.
 
 ---
 
-## H-05 · Las subpáginas no tienen Analytics
+## H-05 · Las subpáginas no tienen Analytics (RESUELTO 05-nov-2026)
 
 **Hallazgo.** GA4 (`G-CNV88M2Q9N`) está **solo en la home**. Medido:
 
@@ -107,12 +107,13 @@ con la key real publicada devuelve `403`. El `202` inicial era falso positivo.
 **Implicancia.** No se ven en GA4 las visitas a las guías (que son las que
 más tráfico orgánico pueden generar).
 
-**Arreglo pendiente.** Copiar el mismo bloque de GA4 a las 4 subpáginas.
-No se hizo porque no estaba pedido. Bajo riesgo.
+**Resuelto (05-nov-2026, PR #28).** El bloque GA4 (mismo tag `G-CNV88M2Q9N` +
+evento `click_whatsapp`) está ahora en las 5 páginas. Verificado en producción:
+`curl /guias/ | grep -c G-CNV88M2Q9N` → 1.
 
 ---
 
-## H-06 · La página 404 es la genérica de Netlify
+## H-06 · La página 404 es la genérica de Netlify (RESUELTO 05-nov-2026)
 
 **Hallazgo.** Cualquier URL inexistente muestra la 404 por defecto de Netlify
 (con branding de Netlify), no una del negocio.
@@ -120,12 +121,13 @@ No se hizo porque no estaba pedido. Bajo riesgo.
 **Implicancia.** Feo y poco profesional si alguien llega por un enlace viejo.
 Además pierde la oportunidad de ofrecer el servicio / WhatsApp.
 
-**Arreglo pendiente.** Crear `404.html` en la raíz: Netlify la usa
-automáticamente como 404 personalizada, sin configuración.
+**Resuelto (05-nov-2026, PR #28).** `404.html` propia en la raíz con CTA a
+WhatsApp, evento GA4 `page_404`, `noindex` y lista de rutas válidas. Verificado
+en producción: cualquier URL inexistente devuelve la 404 del negocio.
 
 ---
 
-## H-07 · El sitemap no tiene `lastmod`
+## H-07 · El sitemap no tiene `lastmod` (RESUELTO 05-nov-2026)
 
 **Hallazgo.** `sitemap.xml` tiene `changefreq` y `priority`, pero **cero**
 `lastmod` (fechas de modificación).
@@ -133,8 +135,10 @@ automáticamente como 404 personalizada, sin configuración.
 **Implicancia.** Los buscadores usan `lastmod` para saber si vale la pena
 re-rasterizar. Sin fechas, pierden una señal útil.
 
-**Arreglo pendiente.** Agregar `<lastmod>YYYY-MM-DD</lastmod>` a cada URL.
-Idealmente automatizarlo con la fecha del último commit.
+**Resuelto (05-nov-2026, PR #28).** `bin/generar-sitemap.sh` regenera
+`sitemap.xml` con `<lastmod>` = fecha del último commit que tocó cada página.
+`--check` compara sin escribir (sirve para CI). Verificado: 5 `lastmod` en
+producción.
 
 ---
 
@@ -285,8 +289,8 @@ Mantención **$9.900 / $19.900/mes**.
 
 | # | Acción | Riesgo | Impacto |
 |---|---|---|---|
-| H-05 | GA4 en las 4 subpáginas | bajo | medir guías |
-| H-06 | `404.html` propia | bajo | imagen profesional |
-| H-07 | `lastmod` en el sitemap | bajo | SEO |
+| ~~H-05~~ | ~~GA4 en las 4 subpáginas~~ ✅ hecho | — | medir guías |
+| ~~H-06~~ | ~~`404.html` propia~~ ✅ hecho | — | imagen profesional |
+| ~~H-07~~ | ~~`lastmod` en el sitemap~~ ✅ hecho | — | SEO |
 | B1 | Search Console (clic operador) | — | indexación |
 | B2 | Dominio `.cl` (ver `PENDIENTES-SEO.md`) | — | **el grande** |
