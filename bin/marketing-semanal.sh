@@ -167,6 +167,13 @@ else
   RESUMEN="$RESUMEN ⚠️ La auditoría técnica encontró problemas — revisar."
 fi
 
+# Aviso a a16 (el canal que SÍ llega: a13 no notifica, ver H-86).
+# Se usa cron-notify.sh, que ya tiene reintento y cola.
+if [ -x "$HOME/bin/cron-notify.sh" ]; then
+  "$HOME/bin/cron-notify.sh" "📊 Informe de marketing $HOY" \
+    "$RESUMEN Abrelo en ~/informes/marketing/$HOY.md" normal >/dev/null 2>&1 || true
+fi
+# Redundancia: dejar el texto también en el portapapeles de a13 por si acaso.
 if [ -x "$WS" ]; then
   "$WS" -t "$RESUMEN Detalle: ~/informes/marketing/$HOY.md" >/dev/null 2>&1 || true
 fi
