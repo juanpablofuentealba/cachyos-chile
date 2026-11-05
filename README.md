@@ -29,11 +29,15 @@ Publicado en Netlify: https://juanpablomasia.netlify.app/
 ├── avisar-buscadores.sh            # Avisa a IndexNow (Bing/Yandex)
 ├── netlify/plugins/indexnow/       # Plugin: avisa a IndexNow en cada deploy
 ├── HALLAZGOS.md                    # H-01..H-15: auditoría técnica verificada
-└── PENDIENTES-SEO.md               # Pendientes de posicionamiento + dominio .cl
+├── PENDIENTES-SEO.md               # Pendientes de posicionamiento + dominio .cl
+└── MARKETING.md                    # ⭐ Resumen consolidado de marketing orgánico
 ```
 
 ## Documentación
 
+- **`MARKETING.md`** — ⭐ **empezar por acá**: resumen consolidado de
+  publicidad y marketing orgánico (oferta, estado SEO medido, las 4 palancas,
+  activos, precios de mercado y checklist de pendientes).
 - **`HALLAZGOS.md`** — auditoría del sitio y de Netlify (15 hallazgos con datos
   medidos): menú móvil, IndexNow, plan Free y créditos, cache, seguridad,
   rendimiento, precios de mercado.
