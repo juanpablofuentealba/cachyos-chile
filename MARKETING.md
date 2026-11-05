@@ -366,10 +366,20 @@ Piezas de Pi que ya están instaladas y sirven para esto:
 - [x] Instalador multi-nodo: `./bin/instalar-skill.sh [--malla|--check]`.
 - [x] Instalada en a13 (a16/msi/hp se sincronizan con `--malla` al estar arriba).
 
-**Etapa 3 — Ciclo automático (cron de a13):**
-- [ ] Job semanal `pi --print` que produce el informe + borradores y **solo**
-      escribe en `~/informes/marketing/AAAA-MM-DD.md` (nada de push automático).
-- [ ] El operador revisa; lo aprobado se convierte en PR.
+**Etapa 3 — Ciclo automático (cron de a13):** ✅ **HECHA 05-nov-2026**
+- [x] **`bin/auditar-sitio.sh`** — auditoría técnica determinista (HTTP de 10
+      rutas + 404 real, enlaces internos rotos, JSON-LD válido, GA4, canonical/
+      og:image/description, sitemap, robots, Googlebot, token de Search Console,
+      peso del HTML). Modos `--json` y `--quiet`. **No usa IA**: es barata,
+      rápida y no miente.
+- [x] **`bin/marketing-semanal.sh`** — orquesta: corre el auditor, junta el
+      informe previo y las guías, y llama a `pi --print` para PROPONER acciones.
+      **Escribe solo en `~/informes/marketing/AAAA-MM-DD.md` y `ULTIMO.md`** y
+      avisa a a16. **No publica, no hace push, no abre PR.**
+- [x] **Cron en a13: lunes 10:00** (`cron-run.sh "marketing-semanal"`).
+      Opciones: `--sin-ia` (solo auditoría) y `--dry-run`.
+- [ ] El operador revisa `~/informes/marketing/ULTIMO.md`; lo aprobado se
+      convierte en PR. (Ciclo humano, por diseño.)
 
 **Etapa 4 — Dominio propio `juanpablomasia.cl`** (verificado LIBRE en NIC, 05-nov-2026):
 - [x] `bin/cambiar-dominio.sh` listo: cambia las **66** apariciones del host
