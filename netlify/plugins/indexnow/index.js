@@ -14,6 +14,7 @@ const URLS = [
   `${SITE}/como-instalar-cachyos/`,
   `${SITE}/linux-vs-windows/`,
   `${SITE}/revivir-pc-viejo-con-linux/`,
+  `${SITE}/pc-se-apaga-solo/`,
   `${SITE}/sitemap.xml`,
 ];
 

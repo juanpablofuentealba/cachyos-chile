@@ -67,8 +67,14 @@ acuerdo previo).
 ## El 5º servicio que falta (oportunidad)
 
 **"El PC se cae / se apaga solo" → diagnóstico + informe** (100% remoto).
-Es el producto **más probado en la práctica** (caso `rai`) y no está publicado.
-Buen candidato a guía + servicio cuando el operador lo apruebe.
+Es el producto **más probado en la práctica** (caso `rai`).
+
+> ✅ **La guía ya está publicada** (05-nov-2026): `/pc-se-apaga-solo/`.
+> **Falta publicarlo como servicio con precio** en la home. Cuando el operador
+> defina precio y alcance del informe, agregarlo acá y en el sitio.
+>
+> Mientras tanto: el tema **sí** se puede ofrecer dentro del **soporte remoto**
+> ($18.000/h) como "diagnóstico y revisión de por qué se apaga".
 
 ## Precios de mercado (contexto, 01-nov-2026)
 

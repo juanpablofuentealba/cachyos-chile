@@ -79,6 +79,8 @@
 - **Hueco de catálogo detectado:** falta como 5º servicio *"el PC se cae / se
   apaga → diagnóstico + informe"*, que es justamente el producto **más probado**
   en la práctica (caso `rai`) y 100% remoto.
+  > ✅ **Encaminado (05-nov-2026):** ya hay **guía publicada** (`/pc-se-apaga-solo/`)
+  > que atrae ese tráfico. Falta venderlo como **servicio con precio**.
 
 > El detalle de la oferta y su relación con la malla vive en
 > `rustdesk-clientes/malla-memoria-comun.md` → *"🌐 El negocio en línea"*.
@@ -216,8 +218,9 @@ Contactos en `rustdesk-clientes/investigacion/macul-contactos-salud.md`.
 - [ ] Ejecutar la **decisión A+B del hero** (B6-bis) y validar `#modalidades`.
 - [ ] Al tener dominio: conectar en Netlify, 301 desde el `.netlify.app`,
       actualizar `canonical`/`og:url`/`sitemap`/JSON-LD, y **reintentar IndexNow**.
-- [ ] Escribir y publicar la guía nº 5: *"el PC se enciende y se apaga solo"*
-      (el servicio que falta y el caso que más se ha resuelto en la práctica).
+- [x] **Guía nº 5 publicada 05-nov-2026:** *"Mi PC se apaga solo: 7 causas y cómo
+      saber cuál es"* → `/pc-se-apaga-solo/`. Es el tema que **más gente busca**
+      y el que corresponde al servicio que aún no se vende.
 
 > 🔎 Detalle de automatización con agentes y plan por etapas: **sección 8**.
 
