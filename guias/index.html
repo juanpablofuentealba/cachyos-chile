@@ -31,6 +31,34 @@
   "url": "https://juanpablomasia.netlify.app/guias/"
 }
 </script>
+<!-- Acelera la carga de Google Analytics/GTM -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+<!-- Google Analytics 4 (mismo tag que la home) -->
+<script>
+(function(){
+  var GA_ID = 'G-CNV88M2Q9N'; /* Google tag "Instalar Linux" — GA4 */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  if (GA_ID) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('config', GA_ID, {});
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (a && GA_ID) {
+      gtag('event', 'click_whatsapp', { event_category: 'contacto', event_label: a.getAttribute('href') });
+    }
+  }, true);
+})();
+</script>
 </head>
 <body>
 

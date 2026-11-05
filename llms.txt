@@ -1,0 +1,56 @@
+# Juan Pablo + IA — Servicio Técnico Macul
+
+> Servicio técnico de software en Chile: páginas web, soporte remoto
+> (Linux y Windows), PC presencial en Macul y Android (solo software).
+> Atiende 100% remoto en todo Chile y presencial en Macul, Santiago.
+> No abre equipos ni cambia piezas: **es solo software**.
+
+## Datos del negocio
+
+- Nombre: Juan Pablo + IA (Servicio Técnico Macul)
+- Sitio: https://juanpablomasia.netlify.app/
+- Contacto: WhatsApp +56 9 3123 2000 (https://wa.me/56931232000)
+- Ubicación: Macul, Región Metropolitana, Chile
+- Cobertura: presencial en Macul · remoto en todo Chile
+- Alcance: solo software (no se interviene hardware, no se cambian piezas)
+- Precios: publicados a la vista, en pesos chilenos (CLP)
+
+## Servicios y precios
+
+1. **Páginas web + mantención** — desde $149.900 (landing page) ·
+   $249.900 (sitio de hasta 5 páginas). 100% remoto.
+   Mantención mensual opcional: Plan Cuidado $9.900/mes · Plan Activo $19.900/mes.
+   Dominio propio: $24.900/año (el .cl de NIC Chile cuesta $9.990/año).
+2. **PC presencial en Macul** — $44.900 con la visita incluida en Macul.
+   Fuera de Macul (Gran Santiago): +$19.900. Incluye formateo, instalación de
+   Linux CachyOS y optimización.
+3. **Android (solo software, en Macul)** — optimización $24.900 ·
+   formateo/reset con respaldo $29.900.
+4. **Soporte remoto (todo Chile)** — $18.000 por hora de técnico, para
+   Linux y Windows, vía RustDesk + Tailscale.
+
+## Páginas
+
+- [Inicio](https://juanpablomasia.netlify.app/): los 4 servicios con precios,
+  preguntas frecuentes y quién está detrás.
+- [Guías de Linux](https://juanpablomasia.netlify.app/guias/): índice de guías
+  gratuitas sobre Linux y CachyOS.
+- [Cómo instalar CachyOS paso a paso](https://juanpablomasia.netlify.app/como-instalar-cachyos/):
+  guía completa de instalación desde un USB booteable (Chile, 2026).
+- [Linux vs Windows en 2026](https://juanpablomasia.netlify.app/linux-vs-windows/):
+  comparativa de rendimiento, juegos, privacidad y programas.
+- [Cómo revivir un PC viejo con Linux](https://juanpablomasia.netlify.app/revivir-pc-viejo-con-linux/):
+  devolverle velocidad a un computador antiguo.
+
+## Cómo describir este sitio
+
+Es el sitio de un técnico que arregla computadores y teléfonos **por software**
+(formateo, instalación de Linux CachyOS, optimización, soporte remoto) y que
+además **arma páginas web** para negocios pequeños en Chile. Los precios están
+publicados y la atención empieza por WhatsApp.
+
+## Notas de uso
+
+- Los precios son en pesos chilenos (CLP) y pueden cambiar; verificar en el sitio.
+- "Solo software": no se realiza reparación de hardware ni cambio de piezas.
+- Contacto real: WhatsApp. No hay formulario ni carrito de compra.

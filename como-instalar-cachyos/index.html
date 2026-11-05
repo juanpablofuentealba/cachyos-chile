@@ -34,19 +34,89 @@
   "image": "https://juanpablomasia.netlify.app/assets/como-instalar-cachyos.jpg",
   "totalTime": "PT1H",
   "tool": [
-    { "@type": "HowToTool", "name": "Pendrive USB de 8 GB o más" },
-    { "@type": "HowToTool", "name": "PC o laptop compatible con Linux" }
+    {
+      "@type": "HowToTool",
+      "name": "Pendrive USB de 8 GB o más"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "PC o laptop compatible con Linux"
+    }
   ],
   "step": [
-    { "@type": "HowToStep", "name": "Respalda tus archivos", "text": "Guarda lo importante en la nube o en un disco externo: la instalación usará todo el disco." },
-    { "@type": "HowToStep", "name": "Descarga la ISO de CachyOS", "text": "Baja la imagen oficial desde cachyos.org y verifica su integridad." },
-    { "@type": "HowToStep", "name": "Crea el USB booteable", "text": "Usa Ventoy, Rufus o la herramienta de escritura de tu sistema para grabar la ISO en el pendrive." },
-    { "@type": "HowToStep", "name": "Arranca desde el USB", "text": "Reinicia y entra al menú de arranque (F12, F11, Esc o Del según la marca) para seleccionar el pendrive." },
-    { "@type": "HowToStep", "name": "Instala con Calamares", "text": "Sigue el asistente: idioma, zona horaria, teclado, particionado y creación de usuario." },
-    { "@type": "HowToStep", "name": "Elige escritorio y kernel", "text": "Selecciona KDE Plasma u otro escritorio y, si aplica, el kernel optimizado según tu hardware." },
-    { "@type": "HowToStep", "name": "Actualiza y configura", "text": "Actualiza el sistema, instala drivers de GPU y el software esencial." }
-  ]
+    {
+      "@type": "HowToStep",
+      "name": "Respalda tus archivos",
+      "text": "Guarda lo importante en la nube o en un disco externo: la instalación usará todo el disco."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Descarga la ISO de CachyOS",
+      "text": "Baja la imagen oficial desde cachyos.org y verifica su integridad."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Crea el USB booteable",
+      "text": "Usa Ventoy, Rufus o la herramienta de escritura de tu sistema para grabar la ISO en el pendrive."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Arranca desde el USB",
+      "text": "Reinicia y entra al menú de arranque (F12, F11, Esc o Del según la marca) para seleccionar el pendrive."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Instala con Calamares",
+      "text": "Sigue el asistente: idioma, zona horaria, teclado, particionado y creación de usuario."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Elige escritorio y kernel",
+      "text": "Selecciona KDE Plasma u otro escritorio y, si aplica, el kernel optimizado según tu hardware."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Actualiza y configura",
+      "text": "Actualiza el sistema, instala drivers de GPU y el software esencial."
+    }
+  ],
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-11-05",
+  "author": {
+    "@type": "Person",
+    "name": "Juan Pablo Fuentealba",
+    "jobTitle": "Técnico en computación y desarrollo web",
+    "url": "https://juanpablomasia.netlify.app/#quien-soy"
+  }
 }
+</script>
+<!-- Acelera la carga de Google Analytics/GTM -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+<!-- Google Analytics 4 (mismo tag que la home) -->
+<script>
+(function(){
+  var GA_ID = 'G-CNV88M2Q9N'; /* Google tag "Instalar Linux" — GA4 */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  if (GA_ID) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('config', GA_ID, {});
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (a && GA_ID) {
+      gtag('event', 'click_whatsapp', { event_category: 'contacto', event_label: a.getAttribute('href') });
+    }
+  }, true);
+})();
 </script>
 </head>
 <body>
@@ -74,7 +144,7 @@
     <a class="back" href="/guias/">← Todas las guías</a>
     <h1>Cómo instalar CachyOS paso a paso (Chile 2026)</h1>
     <p class="lead">CachyOS es una de las distribuciones de Linux más rápidas del momento: usa kernels optimizados y deja tu PC liviano y seguro. Aquí tienes la guía completa, sin tecnicismos innecesarios.</p>
-    <p class="meta">Actualizado 2026 · Lectura 6 min</p>
+    <p class="meta">Actualizado el 5 de noviembre de 2026 · Lectura 6 min</p>
   </div>
 </header>
 

@@ -4,7 +4,7 @@
  *
  * Google NO usa IndexNow: para Google va Search Console (ver PENDIENTES-SEO.md).
  */
-const HOST = "cachyos-chile.netlify.app";
+const HOST = "juanpablomasia.netlify.app";
 const SITE = `https://${HOST}`;
 const KEY = "4ac291d7c370106abaa06b0edf277790";
 

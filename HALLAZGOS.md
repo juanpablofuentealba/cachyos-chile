@@ -1,4 +1,4 @@
-# Hallazgos técnicos — sitio cachyos-chile (Netlify)
+# Hallazgos técnicos — sitio Juan Pablo + IA (Netlify)
 
 > Registro de todo lo auditado y verificado el **01-nov-2026** sobre
 > https://juanpablomasia.netlify.app/ mientras trabaja sin dominio propio.

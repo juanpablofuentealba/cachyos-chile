@@ -1,4 +1,4 @@
-# Tu emprendimiento — cachyos-chile
+# Juan Pablo + IA — repo `cachyos-chile`
 
 > 📣 **Publicidad.** Este repo es el **sitio comercial** (precios, textos de
 > venta, Netlify). Las **herramientas de trabajo** (scripts, método, hallazgos)
