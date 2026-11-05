@@ -32,10 +32,56 @@
   "description": "Guía práctica para devolverle la velocidad a un computador antiguo usando Linux (CachyOS).",
   "inLanguage": "es-CL",
   "image": "https://juanpablomasia.netlify.app/assets/revivir-pc-viejo.jpg",
-  "author": { "@type": "Organization", "name": "Juan Pablo + IA" },
-  "publisher": { "@type": "Organization", "name": "Juan Pablo + IA" },
-  "mainEntityOfPage": "https://juanpablomasia.netlify.app/revivir-pc-viejo-con-linux/"
+  "author": {
+    "@type": "Person",
+    "name": "Juan Pablo Fuentealba",
+    "jobTitle": "Técnico en computación y desarrollo web",
+    "url": "https://juanpablomasia.netlify.app/#quien-soy",
+    "knowsAbout": [
+      "Linux",
+      "CachyOS",
+      "Soporte remoto",
+      "Windows",
+      "Android"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Juan Pablo + IA",
+    "url": "https://juanpablomasia.netlify.app/"
+  },
+  "mainEntityOfPage": "https://juanpablomasia.netlify.app/revivir-pc-viejo-con-linux/",
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-11-05"
 }
+</script>
+<!-- Acelera la carga de Google Analytics/GTM -->
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+<!-- Google Analytics 4 (mismo tag que la home) -->
+<script>
+(function(){
+  var GA_ID = 'G-CNV88M2Q9N'; /* Google tag "Instalar Linux" — GA4 */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  if (GA_ID) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('config', GA_ID, {});
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (a && GA_ID) {
+      gtag('event', 'click_whatsapp', { event_category: 'contacto', event_label: a.getAttribute('href') });
+    }
+  }, true);
+})();
 </script>
 </head>
 <body>
@@ -63,7 +109,7 @@
     <a class="back" href="/guias/">← Todas las guías</a>
     <h1>Cómo revivir un PC viejo con Linux en 2026</h1>
     <p class="lead">Si Windows ya no corre bien en tu computador, no necesitas comprar uno nuevo. Un cambio de sistema puede devolverle años de vida útil.</p>
-    <p class="meta">Actualizado 2026 · Lectura 6 min</p>
+    <p class="meta">Actualizado el 5 de noviembre de 2026 · Lectura 6 min</p>
   </div>
 </header>
 

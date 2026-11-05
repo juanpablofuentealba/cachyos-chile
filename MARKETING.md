@@ -2,7 +2,7 @@
 
 > **Qué es esto.** Todo lo que la malla sabe sobre **publicidad y marketing
 > orgánico del negocio**, reunido y verificado el **05-nov-2026** desde el nodo
-> `a13`. Fuentes revisadas: `cachyos-chile` (README, HALLAZGOS, PENDIENTES-SEO,
+> `a13`. Fuentes revisadas: el repo `cachyos-chile` (README, HALLAZGOS, PENDIENTES-SEO,
 > `index.html`, `sitemap.xml`, `robots.txt`, `netlify.toml`, `avisar-buscadores.sh`,
 > plugin IndexNow), `malla-memoria-comun.md` (bitácora del sitio + tabla de
 > servicios), `~/contenido/` y `~/dev/pi-dropshipping-pack/` (marketing de
@@ -13,11 +13,30 @@
 
 ---
 
+## 0. ⚠️ Nombre: la web y el repo NO se llaman igual
+
+> **Dato anotado por el operador el 05-nov-2026 — importante, no confundir.**
+
+| Qué | Nombre |
+|---|---|
+| **La web (marca)** | **Juan Pablo + IA** → https://juanpablomasia.netlify.app/ |
+| **El repo de GitHub** | `juanpablofuentealba/cachyos-chile` (repo **público**) |
+
+- **Ya no existe una página "cachyos-chile"**. `cachyos-chile.netlify.app`
+  responde **404** (verificado en vivo el 05-nov-2026).
+- **`cachyos-chile` es solo el nombre del repositorio**, no el nombre del sitio
+  ni la marca. En textos de venta, anuncios y cualquier comunicación al cliente
+  **se usa "Juan Pablo + IA"**, nunca "cachyos-chile".
+- Excepción: dentro de la documentación técnica se puede nombrar el repo como
+  `cachyos-chile` para ubicarlo, pero **nunca como URL ni como marca**.
+
+---
+
 ## 1. Lo esencial en 10 líneas
 
 - Marca del sitio: **"Juan Pablo + IA"**. URL viva:
-  **https://juanpablomasia.netlify.app/** (la vieja `cachyos-chile.netlify.app`
-  da **404** — confirmado en vivo).
+  **https://juanpablomasia.netlify.app/** (ver sección 0: `cachyos-chile` es
+  solo el repo; su URL vieja da **404**).
 - El sitio **está publicado y sano** (HTTP 200, Brotli, HTTPS+HSTS, ~0,4 s de
   carga, 5 páginas estáticas).
 - El **on-page está bien resuelto**: 1 H1, meta description de 161 caracteres,
@@ -141,7 +160,7 @@ Ordenadas por relación **impacto / esfuerzo**:
 
 | Activo | Dónde | Uso |
 |---|---|---|
-| **Sitio comercial** "Juan Pablo + IA" | `cachyos-chile` → Netlify | Escaparate principal, precios a la vista |
+| **Sitio comercial** "Juan Pablo + IA" | repo `cachyos-chile` → Netlify (`juanpablomasia.netlify.app`) | Escaparate principal, precios a la vista |
 | **4 guías orgánicas** (CachyOS, Linux vs Windows, revivir PC viejo, índice) | `/guias/`, `/como-instalar-cachyos/`, `/linux-vs-windows/`, `/revivir-pc-viejo-con-linux/` | Imán de tráfico: responden búsquedas reales de gente que **ya** busca soluciones Linux |
 | **Ejemplo real publicado** | `matias-electricista.netlify.app` (cliente `matías`, electricista) | Prueba social en la sección "¿Quién está detrás?" (`#quien-soy`) |
 | **Kit público (vitrina)** | `rustdesk-wlan-ssh-pi-vitrina` | Marketing del *método*, sin datos de clientes |
@@ -360,7 +379,8 @@ tarea del agente es **empaquetar** ese conocimiento, no inventarlo.
 
 ```
 https://juanpablomasia.netlify.app/          -> 200  (URL viva)
-https://cachyos-chile.netlify.app/           -> 404  (vieja, muerta)
+https://cachyos-chile.netlify.app/           -> 404  (vieja, muerta — NO usar)
+marca del sitio      -> "Juan Pablo + IA" (el repo se llama cachyos-chile)
 https://matias-electricista.netlify.app/     -> 200  (ejemplo real)
 sitemap.xml  -> 5 URLs, dominio actualizado, 0 lastmod
 robots.txt   -> Allow: / + sitemap

@@ -1,4 +1,9 @@
 User-agent: *
+
+# Asistentes de IA: mapa del sitio en texto plano, pensado para LLMs.
+# (No es un estándar oficial; lo leen ChatGPT, Perplexity, Claude, etc.)
+# llms.txt: https://juanpablomasia.netlify.app/llms.txt
+
 Allow: /
 
 Sitemap: https://juanpablomasia.netlify.app/sitemap.xml

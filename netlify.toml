@@ -24,6 +24,21 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Mapa del sitio para asistentes de IA (ChatGPT, Perplexity, Claude…).
+# text/plain explícito: algunos lectores rechazan el charset por defecto.
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+# El sitemap cambia con cada guía nueva: cache corto.
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
 # Las rutas limpias (/guias, /como-instalar-cachyos, etc.) las resuelve
 # automáticamente Netlify con pretty URLs: 301 -> /ruta/ -> index.html.
 # No hacen falta redirects manuales.
