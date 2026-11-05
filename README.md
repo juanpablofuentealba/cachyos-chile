@@ -30,7 +30,13 @@ Publicado en Netlify: https://juanpablomasia.netlify.app/
 ├── netlify/plugins/indexnow/       # Plugin: avisa a IndexNow en cada deploy
 ├── HALLAZGOS.md                    # H-01..H-15: auditoría técnica verificada
 ├── PENDIENTES-SEO.md               # Pendientes de posicionamiento + dominio .cl
-└── MARKETING.md                    # ⭐ Resumen consolidado de marketing orgánico
+├── MARKETING.md                    # ⭐ Resumen consolidado de marketing orgánico
+├── DOMINIO-PENDIENTE.md            # Pasos para conectar juanpablomasia.cl
+├── skills/marketing-juanpablo/     # Skill de Pi: voz, precios y cumplimiento
+└── bin/
+    ├── generar-sitemap.sh          # sitemap.xml con <lastmod> real (--check)
+    ├── cambiar-dominio.sh          # pasa todo el sitio al dominio propio
+    └── instalar-skill.sh           # instala la skill en los nodos (--malla)
 ```
 
 ## Documentación
@@ -38,6 +44,11 @@ Publicado en Netlify: https://juanpablomasia.netlify.app/
 - **`MARKETING.md`** — ⭐ **empezar por acá**: resumen consolidado de
   publicidad y marketing orgánico (oferta, estado SEO medido, las 4 palancas,
   activos, precios de mercado y checklist de pendientes).
+- **`DOMINIO-PENDIENTE.md`** — todo listo para `juanpablomasia.cl`: qué ya está
+  hecho por el agente y qué falta hacer a mano (comprar + conectar en Netlify).
+- **`skills/marketing-juanpablo/`** — skill de Pi con la voz de la marca, precios
+  vigentes y checklist de cumplimiento (Ley 19.496). Instalar con
+  `./bin/instalar-skill.sh --malla`.
 - **`HALLAZGOS.md`** — auditoría del sitio y de Netlify (15 hallazgos con datos
   medidos): menú móvil, IndexNow, plan Free y créditos, cache, seguridad,
   rendimiento, precios de mercado.
