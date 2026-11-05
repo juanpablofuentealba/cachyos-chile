@@ -45,7 +45,7 @@ for a in "$@"; do
   esac
 done
 
-REPO="$HOME/dev/cachyos-chile"
+REPO="$HOME/dev/juanpablomasia"
 T="${TMPDIR:-$HOME/.cache}"; mkdir -p "$T"
 
 CURL="curl -sS --max-time 20 -A Mozilla/5.0(auditoria-malla)"

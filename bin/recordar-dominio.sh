@@ -7,7 +7,7 @@
 #
 # Pensado para correr por cron en a13 los días 14, 15, 16, 19 y 20:
 #   0 11 14,15,16,19,20 * *  ~/bin/cron-run.sh "recordar-dominio" \
-#       ~/dev/cachyos-chile/bin/recordar-dominio.sh
+#       ~/dev/juanpablomasia/bin/recordar-dominio.sh
 #
 # Qué hace:
 #   1. Se detiene en cuanto juanpablomasia.cl empieza a responder (ya comprado).
@@ -56,7 +56,7 @@ if [[ $FORCE -eq 0 ]] && [[ -f "$STATE" ]] && grep -q "avisado $HOY" "$STATE" 2>
   exit 0   # silencio: ya se avisó hoy
 fi
 
-MSG='Recordatorio: comprar juanpablomasia.cl en nic.cl (9.990 al año). Ya esta todo preparado: avisa "dominio comprado" y se activa. Detalle: ~/dev/cachyos-chile/DOMINIO-PENDIENTE.md'
+MSG='Recordatorio: comprar juanpablomasia.cl en nic.cl (9.990 al año). Ya esta todo preparado: avisa "dominio comprado" y se activa. Detalle: ~/dev/juanpablomasia/DOMINIO-PENDIENTE.md'
 
 # Avisar a a16 por WhatsApp (wa.sh de la malla) si está disponible.
 WS="$HOME/rustdesk-clientes/scripts/wa.sh"

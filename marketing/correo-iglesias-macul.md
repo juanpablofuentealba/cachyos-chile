@@ -97,7 +97,7 @@ me pongo a su disposición para lo que les falte."*
 ## Checklist de cumplimiento (pasado)
 
 - [x] Precios sacados de `oferta.md` (no inventados).
-- [x] Marca: "Juan Pablo + IA". No aparece "cachyos-chile".
+- [x] Marca: "Juan Pablo + IA". No aparece el nombre del repo.
 - [x] URL correcta: `juanpablomasia.netlify.app` (el `.cl` aún no está).
 - [x] WhatsApp correcto: `wa.me/56931232000`.
 - [x] Tuteo, sin voseo.

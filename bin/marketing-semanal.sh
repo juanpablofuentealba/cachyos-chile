@@ -24,7 +24,7 @@
 # ---------------------------------------------------------------------------
 set -uo pipefail
 
-REPO="$HOME/dev/cachyos-chile"
+REPO="$HOME/dev/juanpablomasia"
 AUDIT="$REPO/bin/auditar-sitio.sh"
 OUT_DIR="$HOME/informes/marketing"
 HOY="$(date +%F)"

@@ -4,7 +4,7 @@
 # (skills/marketing-juanpablo) en ~/.pi/agent/skills/ del nodo actual,
 # y opcionalmente la replica a los demás nodos de la malla por SSH.
 #
-# La skill vive en el repo `cachyos-chile` (fuente de verdad).
+# La skill vive en el repo `juanpablomasia` (fuente de verdad).
 # Al cambiar SKILL.md o references/, correr este script para que Pi la
 # cargue con el contenido nuevo (o /reload dentro de Pi).
 #

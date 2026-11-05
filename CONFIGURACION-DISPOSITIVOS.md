@@ -1,8 +1,8 @@
-# Configuración de los 4 dispositivos — cachyos-chile
+# Configuración de los 4 dispositivos — juanpablomasia
 
 Guía para sincronizar tus dispositivos con el repositorio de GitHub y el sitio de Netlify.
 
-- **Repositorio:** https://github.com/juanpablofuentealba/cachyos-chile
+- **Repositorio:** https://github.com/juanpablofuentealba/juanpablomasia
 - **Sitio en vivo:** https://juanpablomasia.netlify.app/
 - **Usuario GitHub:** juanpablofuentealba
 - **Correo:** jpfuentealbabizama@gmail.com
@@ -25,7 +25,7 @@ Guía para sincronizar tus dispositivos con el repositorio de GitHub y el sitio 
 Copia y pega esto en una terminal **fish** de ese PC:
 
 ```fish
-# ===== SETUP cachyos-chile en CachyOS =====
+# ===== SETUP juanpablomasia en CachyOS =====
 sudo pacman -S --needed git github-cli
 
 git config --global user.name "juanpablofuentealba"
@@ -37,8 +37,8 @@ gh auth login
 
 mkdir -p ~/Projects
 cd ~/Projects
-git clone https://github.com/juanpablofuentealba/cachyos-chile.git
-cd cachyos-chile
+git clone https://github.com/juanpablofuentealba/juanpablomasia.git
+cd juanpablomasia
 
 echo "=== listo ==="
 git log --oneline -1
@@ -52,7 +52,7 @@ git status -sb
 Copia y pega esto en **Termux** de cada Android (shell bash):
 
 ```bash
-# ===== SETUP cachyos-chile en Termux =====
+# ===== SETUP juanpablomasia en Termux =====
 pkg update && pkg upgrade -y
 pkg install -y git gh
 
@@ -65,8 +65,8 @@ gh auth login
 
 mkdir -p ~/Projects
 cd ~/Projects
-git clone https://github.com/juanpablofuentealba/cachyos-chile.git
-cd cachyos-chile
+git clone https://github.com/juanpablofuentealba/juanpablomasia.git
+cd juanpablomasia
 
 echo "=== listo ==="
 git log --oneline -1
@@ -93,7 +93,7 @@ En ambos casos, cuando lo ejecutes:
 En cualquier dispositivo:
 
 ```bash
-cd ~/Projects/cachyos-chile
+cd ~/Projects/juanpablomasia
 git pull                    # traer cambios de otros dispositivos
 # ... editar archivos ...
 git add -A

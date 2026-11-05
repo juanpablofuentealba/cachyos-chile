@@ -2,7 +2,7 @@
 
 > **Qué es esto.** Todo lo que la malla sabe sobre **publicidad y marketing
 > orgánico del negocio**, reunido y verificado el **05-nov-2026** desde el nodo
-> `a13`. Fuentes revisadas: el repo `cachyos-chile` (README, HALLAZGOS, PENDIENTES-SEO,
+> `a13`. Fuentes revisadas: el repo `juanpablomasia` (README, HALLAZGOS, PENDIENTES-SEO,
 > `index.html`, `sitemap.xml`, `robots.txt`, `netlify.toml`, `avisar-buscadores.sh`,
 > plugin IndexNow), `malla-memoria-comun.md` (bitácora del sitio + tabla de
 > servicios), `~/contenido/` y `~/dev/pi-dropshipping-pack/` (marketing de
@@ -20,15 +20,15 @@
 | Qué | Nombre |
 |---|---|
 | **La web (marca)** | **Juan Pablo + IA** → https://juanpablomasia.netlify.app/ |
-| **El repo de GitHub** | `juanpablofuentealba/cachyos-chile` (repo **público**) |
+| **El repo de GitHub** | `juanpablofuentealba/juanpablomasia` (repo **público**) |
 
 - **Ya no existe una página "cachyos-chile"**. `cachyos-chile.netlify.app`
   responde **404** (verificado en vivo el 05-nov-2026).
-- **`cachyos-chile` es solo el nombre del repositorio**, no el nombre del sitio
-  ni la marca. En textos de venta, anuncios y cualquier comunicación al cliente
-  **se usa "Juan Pablo + IA"**, nunca "cachyos-chile".
-- Excepción: dentro de la documentación técnica se puede nombrar el repo como
-  `cachyos-chile` para ubicarlo, pero **nunca como URL ni como marca**.
+- **El repo se llamaba `cachyos-chile` y se renombró a `juanpablomasia`**
+  (05-nov-2026), por coherencia con la marca y el dominio. GitHub mantiene
+  el redirect del nombre viejo.
+- En textos de venta, anuncios y cualquier comunicación al cliente
+  **se usa "Juan Pablo + IA"**, nunca el nombre del repo.
 
 ---
 
@@ -410,7 +410,7 @@ tarea del agente es **empaquetar** ese conocimiento, no inventarlo.
 ```
 https://juanpablomasia.netlify.app/          -> 200  (URL viva)
 https://cachyos-chile.netlify.app/           -> 404  (vieja, muerta — NO usar)
-marca del sitio      -> "Juan Pablo + IA" (el repo se llama cachyos-chile)
+marca del sitio      -> "Juan Pablo + IA" (el repo se llama juanpablomasia)
 https://matias-electricista.netlify.app/     -> 200  (ejemplo real)
 sitemap.xml  -> 5 URLs, dominio actualizado, 0 lastmod
 robots.txt   -> Allow: / + sitemap

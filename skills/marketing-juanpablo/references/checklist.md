@@ -6,7 +6,7 @@
 ## 1. Datos (lo que se puede verificar)
 
 - [ ] **Precio correcto** y sacado de `oferta.md` (no de memoria ni inventado).
-- [ ] **Nombre de marca**: "Juan Pablo + IA". Nunca "cachyos-chile".
+- [ ] **Nombre de marca**: "Juan Pablo + IA". Nunca el nombre del repo.
 - [ ] **URL correcta**: `juanpablomasia.cl` (o `.netlify.app` mientras no haya
       dominio). **Nunca** `cachyos-chile.netlify.app` (está en 404).
 - [ ] **WhatsApp** correcto: `wa.me/56931232000`.

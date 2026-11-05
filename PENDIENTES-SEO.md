@@ -206,7 +206,7 @@ lleven al final un **crédito/publicidad de marca** del operador — algo del ti
 *"Página web creada por Juan Pablo + IA"* / nombre de empresa. Así cada sitio que
 entregamos **trabaja como publicidad nuestra** (efecto "powered by").
 
-**Orden acordado: probar primero en nuestra propia página** (`cachyos-chile`).
+**Orden acordado: probar primero en nuestra propia página** (`juanpablomasia`).
 
 ### Estado actual del footer en `index.html` (línea ~473)
 
@@ -235,12 +235,12 @@ entregamos **trabaja como publicidad nuestra** (efecto "powered by").
 
 ### Enlazado con el negocio
 
-- Encaja con el servicio **#1 (Páginas web + mantención)** de cachyos-chile.
+- Encaja con el servicio **#1 (Páginas web + mantención)** de juanpablomasia.
 - Los sitios de clientes pasan a ser **vitrina** del servicio de desarrollo web.
 - **No** poner datos de clientes en el crédito (privacidad, regla dura nº 5/6).
 
 ### Nota de flujo (cliente nuevo)
 
 Hay un cliente que **mandará sus bocetos escritos + imágenes** para su sitio.
-Cuando lleguen: armarlo en el repo público `cachyos-chile` (si es de marketing/
+Cuando lleguen: armarlo en el repo público `juanpablomasia` (si es de marketing/
 web) y aplicar el crédito de marca al pie desde el primer despliegue.

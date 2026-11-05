@@ -16,7 +16,7 @@
 #
 # Ejemplo de cron (a13, todos los días a las 9:00):
 #   0 9 * * * ~/bin/cron-run.sh "recordar-fechas" \
-#       ~/dev/cachyos-chile/bin/recordar-fechas.sh
+#       ~/dev/juanpablomasia/bin/recordar-fechas.sh
 #
 # Silent cuando no hay nada que avisar.
 # ---------------------------------------------------------------------------

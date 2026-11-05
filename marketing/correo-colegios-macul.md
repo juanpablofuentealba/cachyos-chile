@@ -136,7 +136,7 @@ Cambiar solo `[NOMBRE DEL COLEGIO]`.
 ## Checklist de cumplimiento (pasado)
 
 - [x] Precios sacados de `oferta.md` (no inventados).
-- [x] Marca: "Juan Pablo + IA". No aparece "cachyos-chile".
+- [x] Marca: "Juan Pablo + IA". No aparece el nombre del repo.
 - [x] URL correcta: `juanpablomasia.netlify.app`.
 - [x] WhatsApp correcto: `wa.me/56931232000`.
 - [x] Tuteo, sin voseo.

@@ -18,10 +18,10 @@ Todo lo necesario para escribir, revisar o proponer marketing de este negocio
 | Qué | Nombre |
 |---|---|
 | **La marca / la web** | **Juan Pablo + IA** → `https://juanpablomasia.cl` (dominio propio, en trámite; hoy `juanpablomasia.netlify.app`) |
-| **El repo** | `cachyos-chile` (público) |
+| **El repo** | `juanpablomasia` (público) |
 
 - En **todo** texto de cara al cliente se dice **"Juan Pablo + IA"**.
-- **`cachyos-chile` es solo el nombre del repo.** Nunca como marca ni como URL.
+- **`juanpablomasia` es solo el nombre del repo.** Nunca como marca ni como URL.
 - `cachyos-chile.netlify.app` está **muerto (404)**. No usarlo nunca.
 
 ## 2. La voz de la marca
