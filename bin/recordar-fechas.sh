@@ -30,6 +30,7 @@ HOY_MD="$(date +%m-%d)"
 # Formato: "MM-DD|texto del aviso|días de anticipación"
 FECHAS=(
   "11-16|🎂 Sebastián cumple 10 años|7"
+  "12-16|🎂 Paula cumple años|7"
 )
 
 # --- Motor -----------------------------------------------------------------
