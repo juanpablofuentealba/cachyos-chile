@@ -594,12 +594,14 @@ https://juanpablomasia.netlify.app
 
 Anotar acá para no repetir ni perder el hilo:
 
+> **Meta: 4 colegios por día.** Enviados 05-nov-2026: #1–#4. Siguen: #5–#8 y #9–#11.
+
 | # | Colegio | Correo | Fecha envío | Respuesta |
 |---|---|---|---|---|
-| 1 | The New School | contacto@thenewschool.cl | | |
-| 2 | Colegio San Marcos | comunicaciones@colegiosanmarcos.cl | | |
-| 3 | Colegio CEDI | colegiocedi@gmail.com | | |
-| 4 | Colegio Marta Brunet | contacto@colegiomartabrunet.cl | | |
+| 1 | The New School | contacto@thenewschool.cl | 05-nov-2026 | |
+| 2 | Colegio San Marcos | comunicaciones@colegiosanmarcos.cl | 05-nov-2026 | |
+| 3 | Colegio CEDI | colegiocedi@gmail.com | 05-nov-2026 | |
+| 4 | Colegio Marta Brunet | contacto@colegiomartabrunet.cl | 05-nov-2026 | |
 | 5 | Colegio Los Húsares | contacto@husares.cl | | |
 | 6 | Colegio Regina Mundi | secretaria@colegioreginamundi.cl | | |
 | 7 | Complejo Educacional Esperanza | contacto@colegioesperanza.cl | | |
