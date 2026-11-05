@@ -183,6 +183,8 @@ Contactos en `rustdesk-clientes/investigacion/macul-contactos-salud.md`.
       + solicitar indexación de las 5 URLs.
 - [ ] **Google Business Profile** (Macul): categoría, horario, fotos, WhatsApp.
 - [ ] Revisar el sitio en **su celular** y decir qué se ve mal.
+- [ ] Aprobar el **ciclo de automatización** (sección 8.6) y qué puede publicar
+      el agente solo y qué pasa siempre por su revisión.
 
 **Agente (autónomo, bajo riesgo):**
 - [ ] **GA4 en las 4 subpáginas** (H-05).
@@ -194,9 +196,167 @@ Contactos en `rustdesk-clientes/investigacion/macul-contactos-salud.md`.
 - [ ] Escribir y publicar la guía nº 5: *"el PC se enciende y se apaga solo"*
       (el servicio que falta y el caso que más se ha resuelto en la práctica).
 
+> 🔎 Detalle de automatización con agentes y plan por etapas: **sección 8**.
+
 ---
 
-## 8. Datos duros para citar (verificados el 05-nov-2026)
+## 8. Marketing orgánico automatizado asistido por agentes
+
+> Investigado el **05-nov-2026**. Aquí va **cómo la malla puede producir y
+> mantener su marketing orgánico con agentes** (Pi), sin depender de que el
+> operador se siente a escribir. Es un mapa de diseño, no una receta mágica:
+> lo que ya tenemos, lo que se puede automatizar y dónde están los límites.
+
+### 8.1 Qué significa "orgánico automatizado" (y qué no)
+
+| ✅ Sí se puede automatizar con agentes | ❌ No se debe (o no resulta) |
+|---|---|
+| Escribir y refrescar **contenido** (guías, FAQ, textos) | "Hackear" posiciones o comprar backlinks |
+| **Medir** (GSC, GA4, rankings) y **reportar** lo que se movió | Publicar en masa sin revisión humana |
+| **Detectar** oportunidades (búsquedas sin responder) | Spamear en Meta/TikTok (viola términos) |
+| **Ejecutar** la parte técnica (metadata, JSON-LD, sitemap, `llms.txt`, 301) | Inventar reseñas, testimonios ni stock |
+| **Redactar borradores** de anuncios/guiones y entregarlos listos | Decir "elimina el 100%" / prometer resultados |
+| **Vigilar** que el sitio no se rompa (deploy, 404, enlaces) | Responder reseñas/comentarios con bots |
+
+**Regla de oro del operador:** el agente **investiga y prepara**, el operador
+**decide y publica**. Base legal: **Ley 19.496** (publicidad engañosa) y términos
+de Meta/TikTok (ya está escrita en
+`pi-dropshipping-pack/skills/dropshipping-chile/SKILL.md`).
+
+### 8.2 Las 5 capas del sistema (de abajo hacia arriba)
+
+**Capa 1 — Fundamentos técnicos (agente, sin riesgo).** Es lo que los buscadores
+necesitan para *poder* indexar y rankear. Hoy está casi todo:
+
+| Pieza | Estado (05-nov-2026) |
+|---|---|
+| `robots.txt` + `sitemap.xml` | ✅ 200 OK, 5 URLs |
+| JSON-LD por tipo de página | ✅ `LocalBusiness`+`Offer`+`FAQPage` (home), `HowTo` (cachyos), `Article` (linux-vs-windows, revivir-pc), `CollectionPage` (guias) |
+| Meta description / canonical / OG | ✅ en las 5 páginas |
+| **`llms.txt`** (mapa del sitio para LLMs) | ❌ **404** — no existe |
+| **`lastmod`** en sitemap | ❌ falta |
+| **`404.html`** propia | ❌ falta |
+| **GA4 en subpáginas** | ❌ 0 de 4 |
+| **Search Console** | ❌ sin alta |
+| **Dominio propio** | ❌ pendiente |
+
+> **Aporte nuevo de esta investigación:** el JSON-LD por tipo de página **ya está
+> hecho** (algo que `HALLAZGOS.md` no registraba) — falta *alimentarlo* con
+> datos reales: `datePublished`/`dateModified` verdaderos y `author`.
+
+**Capa 2 — Captura de señales (medición).** Sin esto no hay automatización:
+el agente no puede "ver" qué funciona. **GSC + GA4** son la fuente. La
+automatización real es *leer* esas exportaciones y sacar conclusiones
+(palabras que traen gente, páginas con impresiones altas y CTR bajo = título
+malo, consultas sin página que las responda = contenido que falta).
+
+**Capa 3 — Producción de contenido (agente, con revisión).** Es donde el
+agente rinde más. El patrón ya existe en `pi-dropshipping-pack`:
+*encuadre → AIDA → ángulos → guion → checklist de cumplimiento*. Reutilizable
+para el negocio técnico con otra voz.
+
+**Capa 4 — Distribución y ejecución (agente).** Web es solo una parte:
+Google Business Profile, WhatsApp como canal de conversión, y la vitrina pública
+como backlink natural.
+
+**Capa 5 — Ciclo de mejora (agente + cron).** Medir → escribir → publicar →
+volver a medir. En **a13 ya hay `crond` (runit) corriendo** con jobs cada 15
+min, así que la infraestructura para tareas programadas **ya existe**.
+
+### 8.3 El patrón concreto: cómo se automatiza con Pi hoy
+
+Piezas de Pi que ya están instaladas y sirven para esto:
+
+| Pieza | Cómo se usa para marketing |
+|---|---|
+| **`pi --print "..."`** (modo no interactivo) | Un job de cron que produce un informe de una sola pasada, sin abrir TUI |
+| **`pi --mode json`** | Registro estructurado (JSONL) de lo que hizo el agente → auditable |
+| **Skills** (`skills.md`) | Encapsular el *workflow* de marketing: se cargan solo cuando la tarea lo pide |
+| **Prompt templates** | `/producto`, `/anuncios`, `/tiktok`, `/banner`, `/whatsapp` ya escritos en el pack |
+| **Extensiones** | Ejecutar la parte repetitiva (validar JSON-LD, actualizar sitemap) |
+| **MCP** (`mcp.md`) | Conectar GA4/GSC/Dropi como herramientas del agente |
+| **`codemode`** | Correr en un solo script varias comprobaciones (¿sitemap 200? ¿`llms.txt`? ¿enlaces rotos?) y devolver solo el resumen |
+| **Cron de runit (a13)** | Disparar el ciclo semanal/mensual sin operador presente |
+
+**Ciclo propuesto (semanal, en a13):**
+
+```
+1. codemode  → salud técnica: sitemap/robots/llms.txt/404/enlaces/JSON-LD válido
+2. GSC+GA4   → top consultas, CTR bajo, páginas sin tráfico, consultas huérfanas
+3. agente    → propone 1-3 acciones (título nuevo / sección FAQ / guía nueva)
+4. agente    → redacta el borrador + el cambio técnico exacto (diff)
+5. operador  → aprueba por WhatsApp/sesión (1 min)
+6. agente    → rama + PR + verificación + deploy
+7. registrar → qué se hizo y qué se espera medir la próxima semana
+```
+
+### 8.4 Qué NO se automatiza con agentes (límites duros)
+
+1. **Autoridad real.** Google no premia "volumen producido por IA": premia
+   contenido **útil, verificable y de una fuente real**. El sitio tiene ventaja
+   única acá: **casos reales** (`rai`, `matías`) — eso no lo puede generar un
+   agente, solo el operador.
+2. **Cuentas.** Search Console, Business Profile, NIC Chile y Meta requieren
+   **identidad del operador**. El agente guía, no suplanta.
+3. **Publicar sin revisar.** Un agente que publica solo **destruye la marca** en
+   un error. Siempre PR + revisión.
+4. **Promesas.** Nada de "garantizado", "100%", "cura": Ley 19.496.
+5. **Reseñas.** Se piden y se muestran reales; no se escriben.
+
+### 8.5 Gaps concretos que esta investigación reveló
+
+| Gap | Por qué importa | Quién |
+|---|---|---|
+| **Sin `llms.txt`** (404) | Los asistentes IA (ChatGPT, Perplexity, Copilot) son hoy una **fuente real de tráfico orgánico**. Un `llms.txt` le dice a esos asistentes qué hay en el sitio y cómo citarlo. Es texto plano, riesgo cero. | Agente |
+| **`dateModified` falso/genérico** | Los buscadores y los LLMs premian *frescura real*. Hay "2026" en todas las páginas: sin fecha exacta no se distingue lo actual. | Agente |
+| **Sin `author`/`publisher` real** en el JSON-LD de las guías | Es la señal de **E-E-A-T** (experiencia real). El operador *sí* tiene experiencia: hay que declararla. | Agente |
+| **Sin medición de subpáginas** | Sin GA4 en las guías, el ciclo completo no tiene entrada. | Agente |
+| **Sin `Marketing` en el flujo de Pi** | El pack de dropshipping tiene skill; el negocio técnico **no tiene su propia skill de marketing**. Hoy el conocimiento vive en `MARKETING.md`, que es pasivo. | Agente |
+| **Cron sin job de marketing** | Hay 3 jobs (watchdog, relé WoL, sync HP) pero **ninguno** mide ni reporta la web. | Agente |
+
+### 8.6 Plan por etapas (lo que se puede empezar ya)
+
+**Etapa 0 — Cimientos (agente, 1 sesión, reversible):**
+- [ ] `llms.txt` en la raíz (mapa del sitio en texto plano para asistentes IA).
+- [ ] `lastmod` real en `sitemap.xml`, generado desde la fecha del commit.
+- [ ] `404.html` propia con CTA a WhatsApp.
+- [ ] GA4 en las 4 subpáginas (cierra H-05).
+- [ ] `author`/`publisher` + `dateModified` reales en el JSON-LD.
+
+**Etapa 1 — Ojos (operador + agente):**
+- [ ] Search Console (verificación por GA4) + enviar sitemap.
+- [ ] Exportar/consultar GSC y GA4; primer informe de "qué trae gente".
+
+**Etapa 2 — Skill de marketing del negocio:**
+- [ ] Crear `marketing-servicio-tecnico` (skill de Pi) con la voz del negocio:
+      tuteo chileno, precios a la vista, prueba real, sin promesas.
+      **Este repo (`cachyos-chile`) es su fuente de verdad.**
+
+**Etapa 3 — Ciclo automático (cron de a13):**
+- [ ] Job semanal `pi --print` que produce el informe + borradores y **solo**
+      escribe en `~/informes/marketing/AAAA-MM-DD.md` (nada de push automático).
+- [ ] El operador revisa; lo aprobado se convierte en PR.
+
+**Etapa 4 — Cuando haya dominio propio:**
+- [ ] IndexNow empieza a funcionar (Bing/Yandex) en cada deploy.
+- [ ] 301 del `.netlify.app`, `canonical`/`og:url`/`sitemap`/JSON-LD al dominio.
+
+### 8.7 La advertencia importante
+
+El marketing orgánico automatizado **multiplica lo que ya hay**, no crea
+resultados de la nada. Si el sitio no está indexado (hoy **probablemente no lo
+está**: sin Search Console), automatizar contenido es **llenar un balde sin
+fondo**. **Orden correcto: primero cimientos y medición (Etapas 0 y 1), después
+producción.**
+
+Además: el contenido generado por IA **sin experiencia real encima** se detecta
+y no posiciona. El activo que ningún competidor puede copiar es el archivo de
+**casos reales resueltos** (rai, matías, los hallazgos H-01..H-86 del kit). La
+tarea del agente es **empaquetar** ese conocimiento, no inventarlo.
+
+---
+
+## 9. Datos duros para citar (verificados el 05-nov-2026)
 
 ```
 https://juanpablomasia.netlify.app/          -> 200  (URL viva)
@@ -204,10 +364,13 @@ https://cachyos-chile.netlify.app/           -> 404  (vieja, muerta)
 https://matias-electricista.netlify.app/     -> 200  (ejemplo real)
 sitemap.xml  -> 5 URLs, dominio actualizado, 0 lastmod
 robots.txt   -> Allow: / + sitemap
+llms.txt     -> 404  (no existe)
 subpáginas con GA4 -> 0 de 4
 404.html     -> no existe
+JSON-LD por página  -> LocalBusiness/Offer/FAQPage · HowTo · Article · CollectionPage
 IndexNow     -> 403 UserForbiddedToAccessSite (subdominio .netlify.app)
 dominio .cl  -> serviciotecnicomacul.cl LIBRE (whois.nic.cl, 01-nov-2026)
+a13          -> crond (runit) activo; pi --print / --mode json disponibles
 ```
 
 ---
