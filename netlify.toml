@@ -42,3 +42,21 @@
 # Las rutas limpias (/guias, /como-instalar-cachyos, etc.) las resuelve
 # automáticamente Netlify con pretty URLs: 301 -> /ruta/ -> index.html.
 # No hacen falta redirects manuales.
+
+# ---------------------------------------------------------------------------
+# DOMINIO PROPIO — juanpablomasia.cl
+#
+# Ya está todo preparado. Este bloque NO tiene efecto hasta que el dominio
+# esté conectado en Netlify (Domain settings). Cuando esté conectado, Netlify
+# sirve el dominio nuevo y redirige el .netlify.app acá automáticamente
+# ("Primary domain" + redirect de dominio cansado), así que esta regla es una
+# segunda red de seguridad: garantiza el 301 sin perder la ruta.
+#
+# Para activarlo: descomentar (quitar los '#' de las 3 líneas de abajo) y
+# correr ./bin/cambiar-dominio.sh juanpablomasia.cl
+#
+# [[redirects]]
+#   from = "https://juanpablomasia.netlify.app/*"
+#   to = "https://juanpablomasia.cl/:splat"
+#   status = 301
+#   force = true

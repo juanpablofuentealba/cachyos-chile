@@ -46,8 +46,8 @@
   **Google orgánico + WhatsApp**. Sin **Search Console** ni **dominio propio**,
   el sitio compite con las manos atadas.
 - **Las dos palancas grandes siguen pendientes:** (1) alta en **Google Search
-  Console**, (2) **dominio `.cl` propio** (`serviciotecnicomacul.cl` estaba
-  **libre** al 01-nov).
+  Console**, (2) **dominio `.cl` propio**: **`juanpablomasia.cl`**, verificado
+  **libre** en NIC Chile (05-nov-2026).
 - **IndexNow** (Bing/Yandex) está armado y **falla con 403** por ser subdominio
   `.netlify.app`: se activa solo cuando haya dominio propio.
 - **Todo el tráfico orgánico de las guías es invisible:** GA4 está **solo en la
@@ -136,8 +136,10 @@
 
 Ordenadas por relación **impacto / esfuerzo**:
 
-1. **Dominio `.cl` propio** — `serviciotecnicomacul.cl` **verificada LIBRE** en
-   el whois de NIC Chile (01-nov-2026). $9.990/año, se inscribe a nombre del
+1. **Dominio `.cl` propio** — **`juanpablomasia.cl`** (elegido por el operador el
+   05-nov-2026, **verificado LIBRE** en el whois de NIC Chile).
+   ~~`serviciotecnicomacul.cl`~~ también estaba libre, pero se prefiere la marca
+   personal: sirve para todos los servicios, no solo para Macul. $9.990/año, se inscribe a nombre del
    operador con RUT (el agente **no puede** comprarlo: pago con tarjeta +
    identidad + NIC no tiene API).
    *Al tenerlo se desbloquea:* autoridad ante Google, **IndexNow deja de dar
@@ -197,7 +199,8 @@ Contactos en `rustdesk-clientes/investigacion/macul-contactos-salud.md`.
 ## 7. Pendientes de marketing (checklist accionable)
 
 **Operador (no delegable):**
-- [ ] Comprar `serviciotecnicomacul.cl` en NIC Chile (RUT + tarjeta, $9.990).
+- [ ] Comprar **`juanpablomasia.cl`** en NIC Chile (RUT + tarjeta, $9.990/año).
+      ⚠️ Verificado LIBRE el 05-nov-2026. Pasos: **`DOMINIO-PENDIENTE.md`**.
 - [ ] Alta en **Google Search Console** (verificación por GA4) + enviar sitemap
       + solicitar indexación de las 5 URLs.
 - [ ] **Google Business Profile** (Macul): categoría, horario, fotos, WhatsApp.
@@ -257,8 +260,9 @@ necesitan para *poder* indexar y rankear. Hoy está casi todo:
 | **`lastmod`** en sitemap | ✅ hecho 05-nov-2026 (`bin/generar-sitemap.sh`) |
 | **`404.html`** propia | ✅ hecho 05-nov-2026 |
 | **GA4 en subpáginas** | ✅ hecho 05-nov-2026 (5 de 5) |
-| **Search Console** | ❌ sin alta |
-| **Dominio propio** | ❌ pendiente |
+| **Search Console** | ❌ sin alta (paso del operador) |
+| **Dominio propio** | ⏳ `juanpablomasia.cl` **LIBRE**, todo preparado — ver `DOMINIO-PENDIENTE.md` |
+| **Skill de marketing** | ✅ `marketing-juanpablo` instalada (Etapa 2) |
 
 > **Aporte nuevo de esta investigación:** el JSON-LD por tipo de página **ya está
 > hecho** (algo que `HALLAZGOS.md` no registraba) — falta *alimentarlo* con
@@ -352,19 +356,26 @@ Piezas de Pi que ya están instaladas y sirven para esto:
 - [ ] Search Console (verificación por GA4) + enviar sitemap.
 - [ ] Exportar/consultar GSC y GA4; primer informe de "qué trae gente".
 
-**Etapa 2 — Skill de marketing del negocio:**
-- [ ] Crear `marketing-servicio-tecnico` (skill de Pi) con la voz del negocio:
-      tuteo chileno, precios a la vista, prueba real, sin promesas.
-      **Este repo (`cachyos-chile`) es su fuente de verdad.**
+**Etapa 2 — Skill de marketing del negocio:** ✅ **HECHA 05-nov-2026**
+- [x] Skill **`marketing-juanpablo`** en `skills/marketing-juanpablo/`:
+      voz de la marca (tuteo chileno), precios vigentes en `references/oferta.md`,
+      checklist de cumplimiento Ley 19.496 en `references/checklist.md`.
+- [x] Instalador multi-nodo: `./bin/instalar-skill.sh [--malla|--check]`.
+- [x] Instalada en a13 (a16/msi/hp se sincronizan con `--malla` al estar arriba).
 
 **Etapa 3 — Ciclo automático (cron de a13):**
 - [ ] Job semanal `pi --print` que produce el informe + borradores y **solo**
       escribe en `~/informes/marketing/AAAA-MM-DD.md` (nada de push automático).
 - [ ] El operador revisa; lo aprobado se convierte en PR.
 
-**Etapa 4 — Cuando haya dominio propio:**
-- [ ] IndexNow empieza a funcionar (Bing/Yandex) en cada deploy.
-- [ ] 301 del `.netlify.app`, `canonical`/`og:url`/`sitemap`/JSON-LD al dominio.
+**Etapa 4 — Dominio propio `juanpablomasia.cl`** (verificado LIBRE en NIC, 05-nov-2026):
+- [x] `bin/cambiar-dominio.sh` listo: cambia las **66** apariciones del host
+      (canonical, OG, Twitter, JSON-LD, sitemap, robots, llms.txt, IndexNow).
+- [x] Redirección 301 escrita en `netlify.toml` (comentada, se activa al conectar).
+- [ ] **Operador:** comprar en NIC Chile ($9.990/año) y conectar en Netlify.
+      Pasos exactos en **`DOMINIO-PENDIENTE.md`**.
+- [ ] Al conectar: correr `./bin/cambiar-dominio.sh juanpablomasia.cl`,
+      descomentar el 301 y **reintentar IndexNow** (deja de dar 403).
 
 ### 8.7 La advertencia importante
 
@@ -396,7 +407,7 @@ subpáginas con GA4 -> 4 de 4 (05-nov-2026)
 sitemap      -> 5 lastmod reales (05-nov-2026)
 JSON-LD por página  -> LocalBusiness/Offer/FAQPage · HowTo · Article · CollectionPage
 IndexNow     -> 403 UserForbiddedToAccessSite (subdominio .netlify.app)
-dominio .cl  -> serviciotecnicomacul.cl LIBRE (whois.nic.cl, 01-nov-2026)
+dominio .cl  -> juanpablomasia.cl LIBRE (whois.nic.cl, 05-nov-2026)
 a13          -> crond (runit) activo; pi --print / --mode json disponibles
 ```
 
