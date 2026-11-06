@@ -26,6 +26,9 @@ CHECK=0
 # ruta local | URL | prioridad
 PAGES=(
   "index.html|$SITE/|1.0"
+  "soporte-remoto/index.html|$SITE/soporte-remoto/|0.9"
+  "pc-macul/index.html|$SITE/pc-macul/|0.9"
+  "android/index.html|$SITE/android/|0.8"
   "guias/index.html|$SITE/guias/|0.8"
   "como-instalar-cachyos/index.html|$SITE/como-instalar-cachyos/|0.9"
   "linux-vs-windows/index.html|$SITE/linux-vs-windows/|0.8"
