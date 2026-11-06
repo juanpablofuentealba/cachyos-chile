@@ -35,6 +35,11 @@ Incluye: hosting (Netlify), HTTPS, versión móvil, botón de WhatsApp, alta bá
 en buscadores. **Ojo:** el hosting del cliente va en **su propia cuenta Netlify**
 (los créditos del plan Free son compartidos; si un cliente se dispara, se caen todos).
 
+> **Cómo se entrega (hosting y dominio):** el trabajo lo hace el operador; el
+dominio y la cuenta Netlify quedan **a nombre del cliente**. Al cliente **no se
+le pide crear nada**. Textos para explicárselo, procedimiento interno y qué no
+decir: **`marketing/entrega-hosting-dominio-cliente.md`**.
+
 ### 2. PC presencial en Macul — formateo + Linux CachyOS + optimización
 
 | Qué | Precio |
